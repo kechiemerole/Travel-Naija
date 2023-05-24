@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Naija</title><link href="dist/hamburgers.css" rel="stylesheet">
+</head>
+<body>
+
+
+<button class="hamburger hamburger--collapse" type="button">f
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+</body>
+
+<style>
+.hamburger  {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: pink;
+}</style>
+
+<script>
+    // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+</script>
