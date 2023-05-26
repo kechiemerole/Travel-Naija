@@ -36,7 +36,6 @@
     <div id="menu-btn" class="fa fa-bars">
     </div>
 </section>
-<!-- hamburger menu starts -->
 <script>
   let menu = document.querySelector('#menu-btn');
   let navbar = document.querySelector('.header .navbar');
@@ -45,71 +44,12 @@
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 
-  }
-
-  let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("slides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 1000); // Change image every 2 seconds
-}
+  };
   </script>
-<!-- hamburger menu ends -->
 
-<!-- home section starts -->
-<section class = "home">
-<div class="home-slider">
-  <div class= "W">
-      <div class="content">
-        <h3>adventure is worth while</h3>
-<p>discover nigeria with us, the adventure awaits</p>
-<a href="#" class="btn">discover more</a>
-      
-    </div>
-  </div>
-
+<div class="heading" style="background:url(./images/obudu-holy-mountain.jpg) no-repeat">
+  <h1>packages</h1>
 </div>
-
-
-<!-- photo-container -->
-
-<div class="photo-container">
-  <div class="slides">
-  <img src="images/calabar-carnival.jpg" alt="calabar carnival photo">
-</div>
-
-<div class="slides">
-  <img src="images/Ogbunike-cave-front.jpg" >
-</div>
-
-<div class="slides">
-  <img src="images/obudu-mountain-resort.jpg">
-</div>
-
-<div class="slides">
-  <img src="images/lekki-link-bridge.jpg">
-</div>
-</div>
-
-<div class="controls">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>
-
-</section>
-<!-- home section ends -->
-
-
 
   <!-- footer -->
 <section class="footer">

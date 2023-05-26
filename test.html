@@ -8,21 +8,103 @@
 <body>
 
 
-<button class="hamburger hamburger--collapse" type="button">f
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
+  <section class="header">
+    <a href="#logo" class="logo">travel.naija</a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#Museums">Museums</a>
+        <a href="#Events">Events</a>
+        <a href="#Bookings">Bookings</a>
+        <a href="#Packages">Packages</a>
+    </nav>
+</section>
+
 </body>
 
 <style>
-.hamburger  {
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: pink;
-}</style>
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
 
-<script>
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-btn span:last-child {
+    margin-bottom: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar a {
+    margin-right: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle:checked + .navbar {
+        display: block;
+    }
+
+    .menu-btn span {
+        background-color: #fff;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+</style>
+
+<!-- <script>
     // Look for .hamburger
   var hamburger = document.querySelector(".hamburger");
   // On click
@@ -31,4 +113,5 @@
     hamburger.classList.toggle("is-active");
     // Do something else, like open/close menu
   });
-</script>
+</script> -->
+</html>
