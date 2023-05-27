@@ -37,82 +37,140 @@
     </div>
 </section>
 <!-- hamburger menu starts -->
-<script>
-  let menu = document.querySelector('#menu-btn');
-  let navbar = document.querySelector('.header .navbar');
-
-  menu.onclick = () => {
-    menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
-
-  }
-
-  let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("slides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 1000); // Change image every 2 seconds
-}
-  </script>
-<!-- hamburger menu ends -->
 
 <!-- home section starts -->
-<section class = "home">
-<div class="home-slider">
-  <div class= "W">
+<section class = "home" id="home">
       <div class="content">
         <h3>adventure is worth while</h3>
-<p>discover nigeria with us, the adventure awaits</p>
-<a href="#" class="btn">discover more</a>
-      
-    </div>
-  </div>
-
-</div>
-
-
-<!-- photo-container -->
-
-<div class="photo-container">
-  <div class="slides">
-  <img src="images/calabar-carnival.jpg" alt="calabar carnival photo">
-</div>
-
-<div class="slides">
-  <img src="images/Ogbunike-cave-front.jpg" >
-</div>
-
-<div class="slides">
-  <img src="images/obudu-mountain-resort.jpg">
-</div>
-
-<div class="slides">
-  <img src="images/lekki-link-bridge.jpg">
-</div>
+        <p>discover nigeria with us, the adventure awaits</p>
+        <a href="#top-destinations" class="btn">discover more</a>    
 </div>
 
 <div class="controls">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="photo-btn active" data-src="images/obudu-mountain-resort.jpg"></span>
+  <span class="photo-btn " data-src="images/calabar-carnival.jpg"></span>
+  <span class="photo-btn" data-src="images/ilashe-beach.jpg"></span>
+  <span class="photo-btn" data-src="images/Wikki-Warm-Spring-Bauchi-State.webp"></span>
+</div>
+
+<div class="photo-container">
+  <img src="images/obudu-mountain-resort.jpg" id="photo-slider"alt="obudu-mountain-resort">
 </div>
 
 </section>
+
 <!-- home section ends -->
 
 
 
-  <!-- footer -->
-<section class="footer">
+ 
+
+<!-- home top places section start -->
+<section class ="top-destinations" id="top-destinations">
+<h1 class ="heading-title">top destinations</h1>
+<div class ="box-container">
+  <div class="box">
+    <div class="image">
+      <image src="packages/carnival-woman-costume-orange-48796.webp" alt="carnival woman"></image>
+    </div>
+    <div class="content">
+      <h3>Adventure and Tour</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales hendrerit odio, vel pretium mauris aliquam at. In porttitor, felis sed blandit maximus, dolor nibh consectetur sapien, at venenatis urna tellus vel turpis. </p>
+      <a href="book.php" class="btn">book now</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="image">
+      <image src="images/Ogbunike-Cave.jpg" alt="carnival woman"></image>
+    </div>
+    <div class="content">
+      <h3>Adventure and Tour</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales hendrerit odio, vel pretium mauris aliquam at. In porttitor, felis sed blandit maximus, dolor nibh consectetur sapien, at venenatis urna tellus vel turpis. </p>
+      <a href="#" class="btn">book now</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="image">
+      <image src="packages/okomu.jpg" alt="carnival woman"></image>
+    </div>
+    <div class="content">
+      <h3>Adventure and Tour</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales hendrerit odio, vel pretium mauris aliquam at. In porttitor, felis sed blandit maximus, dolor nibh consectetur sapien, at venenatis urna tellus vel turpis.</p>
+      <a href="book.php" class="btn">book now</a>
+    </div>
+  </div>
+  
+  <div class="box">
+    <div class="image">
+      <image src="packages/okomu-national-park.jpeg" alt="carnival woman"></image>
+    </div>
+    <div class="content">
+      <h3>Adventure and Tour</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales hendrerit odio, vel pretium mauris aliquam at. In porttitor, felis sed blandit maximus, dolor nibh consectetur sapien, at venenatis urna tellus vel turpis. </p>
+      <a href="book.php" class="btn">book now</a>
+    </div>
+  </div>
+  
+ 
+</div>
+
+</section>
+
+<!-- home top pages section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- footer -->
+ <section class="footer">
   <div class="box-container">
     <div class="box">
       <h3>quick links</h3>
@@ -149,5 +207,69 @@ function showSlides() {
   <div class="credit">created by <span> kechi emerole </span> | all rights reserved!</div>
 
 </section>
+
+<script>
+  let menu = document.querySelector('#menu-btn');
+  let navbar = document.querySelector('.header .navbar');
+  let photobtn = document.querySelectorAll('.photo-btn');
+//  hamburger menu starts 
+
+  menu.onclick = () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+  }
+//  hamburger menu ends 
+
+  
+// photo slider clicker starts
+photobtn.forEach(btn =>{
+    btn.addEventListener('click', ()=>{
+      document.querySelector('.controls .active').classList.remove('active');
+      btn.classList.add('active');
+      let src = btn.getAttribute('data-src');
+      document.querySelector('#photo-slider').src = src;
+    });
+
+});
+// photo slider clicker ends 
+
+//slideshow starts
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("photo-btn");
+  let photoSlider = document.querySelector("#photo-slider");
+
+  // Hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+
+  // Increment slide index
+  slideIndex++;
+
+  // Wrap slide index to the first slide if it exceeds the length
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  // Display the current slide and add active class to corresponding dot
+  slides[slideIndex - 1].classList.add("active");
+
+  // Change the photo-slider image source
+  let src = slides[slideIndex - 1].getAttribute("data-src");
+  photoSlider.src = src;
+  photoSlider.alt = slides[slideIndex - 1].alt;
+
+  // Change slide every 2 seconds
+  setTimeout(showSlides, 3000);
+}
+
+//slideshow ends 
+
+  </script>
+
 </body>
 </html>

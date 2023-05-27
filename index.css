@@ -10,9 +10,11 @@ font-family: 'Source Sans Pro', sans-serif; */
     --black: #222;
     --white: #fff;
     --border: 1rem solid var(--black);
-    --box-shadow: 0 .1rem 1rem rgb(92, 91, 91);
+    --box-shadow: 0 .1rem 1rem rgb(19, 18, 18);
     --text-shadow: 0 .5rem 3rem rgba(0,0,0.3);
     --border: 0.1rem solid rgb(198, 198, 198);
+    --soft-shadow: 0 .1rem  .7rem rgb(83, 83, 83);
+
 }
 
 *{
@@ -24,16 +26,23 @@ font-family: 'Source Sans Pro', sans-serif; */
     text-decoration: none;
     text-transform: capitalize;
 
+
 }
 
 body {
     font-size: 100%;
     overflow-x: hidden;
+    background: whitesmoke;
+
+}
+html{
     scroll-behavior: smooth;
+
 }
 
 html::webkit-scrollbar{
-    width: 1rem;
+    width: 0.5rem;
+
 }
 
 html::webkit-scrollbar-track{
@@ -41,6 +50,10 @@ html::webkit-scrollbar-track{
 }
 
 html::webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+html::webkit-scrollbar-thumb:hover{
     background-color: var(--main-color);
 }
 
@@ -141,15 +154,18 @@ section{
 }
 
 .footer {
-    background: url(./images/obudu-holy-mountain.jpg);
+    background: rgb(0, 31, 0);
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
 }
 
 .footer .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: .5rem;
 }
 
@@ -161,8 +177,8 @@ section{
 
 .footer .box-container .box a{
     color: var(--white);
-    font-size: 1rem;
-    padding-bottom: 1rem;
+    font-size: .7rem;
+    padding-bottom: .5rem;
     display: block;
 
 }
@@ -181,7 +197,7 @@ section{
 .footer .credit{
     text-align: center;
     padding-top: 2rem;
-    margin-top:2rem;
+    margin-top: 2rem;
     border-top: .1rem solid var(--white);
     font-size: 1rem;
     color:var(--white);
@@ -192,7 +208,7 @@ section{
 }
 
 .home{
-    min-width: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -204,57 +220,73 @@ section{
 
 .home .content{
     text-align: center;
-    padding: 2rem;
+    margin-top: 8rem;
+    /* padding: 2rem;
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
 
 }
 
 .home .content h3{
     font-size: 3rem;
-    color: rgba(204, 202, 202, 0.568);
+    color: rgba(220, 219, 219, 0.847);
     text-transform: uppercase;
     padding: 5rem, 0;
-    
-
 
 }
 
+.home .content p{
+    font-size: 2.5rem;
+    color: rgba(220, 219, 219, 0.847);
+    padding: 5rem, 0;
+}
 
-.home .content .btn{
+
+
+.btn{
     display: inline-block;
     border: 0.1rem solid grey;
+    background: var(--white);
     padding: 0.5rem 3rem;
     text-decoration: none;
     border-radius: 0.3rem;
+    margin-top:15%;
 }
 
-.dot {
+
+.home .controls{
+    padding:1rem;
+    border-radius: 5rem;
     position: relative;
-    cursor: pointer;
+    top: 2rem;
+
+}
+
+.home .controls .photo-btn{
     height: 1rem;
     width: 1rem;
-    background-color: #bbb;
-    border-radius: 50%;
     display: inline-block;
-    gap: 4rem;
-    margin-top: 4rem;
-    margin-right: .5rem;
-    margin-left: .5rem;
-    transition: background-color 0.6s ease;
-  }
+    border-radius: 50%;
+    background: #edecec;
+    cursor: pointer;
+    margin: 0 .5rem;  
 
-  .controls {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+}
+ 
+  .home .controls .photo-btn:hover {
+    background-color: #a8a7a7;
+    transition: background-color 0.6s ease;
+
   }
   
-  .active, .dot:hover {
-    background-color: #717171;
+
+  .home .controls .photo-btn.active{
+    background: var(--main-color);
   }
+  
+
   
   /* Fading animation */
   .fade {
@@ -267,19 +299,95 @@ section{
     to {opacity: 1}
   }
 
+
+
   .home .photo-container img{
     position: absolute;
     top:0; left:0;
     z-index: -1;
-    height: 100%;
+    height: 90%;
     width: 100%;
     object-fit: cover;
   }
-  .slides {
-    display: none;
+ 
+  .top-destinations{
+    padding: 5rem;
+  }
+
+  .top-destinations .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    cursor: pointer;
+
+
+
+  }
+
+
+  .top-destinations .box-container .box {
+    background: var(--white);
+    border: .0005rem solid rgb(231, 231, 231);
+    border-radius: .5rem;
+    /* box-shadow: var(--soft-shadow); */
+
+
+  }
+
+ 
+  .top-destinations  h1{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  .top-destinations .box-container  .box image{
+    height: 4rem;
+    overflow: hidden;
+
+
   }
   
-  .photo-container .slides:first-child {
-    display: block;
+
+  .top-destinations .box-container .box:hover .image img{
+    transition: 0.3s;
+    opacity:0.7;
+    
+
+
   }
-  
+
+
+
+
+  .top-destinations .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+    border-radius: .5rem .5rem 0 0;
+
+ }
+
+ .top-destinations .box-container .box .content{
+   text-align: center;
+   padding: 1.5rem;
+ }
+
+ .top-destinations .box-container .box p{
+
+    font-size: 1rem;
+    color: lightskyblue;
+    line-height: 2;
+    padding: .5rem 0;
+
+ }
+
+ .top-destinations .box-container .box  .content .btn{
+    cursor: pointer;
+    margin-top: 1rem;
+
+
+    
+ }
+
+ 

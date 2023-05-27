@@ -8,102 +8,152 @@
 <body>
 
 
-  <section class="header">
-    <a href="#logo" class="logo">travel.naija</a>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#Museums">Museums</a>
-        <a href="#Events">Events</a>
-        <a href="#Bookings">Bookings</a>
-        <a href="#Packages">Packages</a>
-    </nav>
-</section>
+    <section class = "home" id="home">
+        <div class="content">
+          <h3>adventure is worth while</h3>
+          <p>discover nigeria with us, the adventure awaits</p>
+          <a href="#" class="btn">discover more</a>    
+  </div>
+  
+  <div class="controls">
+    <span class="photo-btn active" data-src="images/calabar-carnival.jpg"></span>
+    <span class="photo-btn" data-src="images/Ogbunike-cave-front.jpg"></span>
+    <span class="photo-btn" data-src="images/obudu-mountain-resort.jpg"></span>
+    <span class="photo-btn" data-src="images/lekki-link-bridge.jpg"></span>
+  </div>
+  
+  <div class="photo-container">
+    <img src="images/calabar-carnival.jpg" id="photo-slider"alt="calabar carnival photo">
+  </div>
+  </section>
 
 </body>
 
 <style>
-.header {
+
+.home{
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #f2f2f2;
+    justify-items: center;
+    flex-flow: column;
+    position: relative;
+    z-index:0 ;
+
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
+.home .content{
+    text-align: center;
+    margin-top: 8rem;
+    /* padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; */
+
 }
 
-.menu-toggle {
-    display: none;
+.home .content h3{
+    font-size: 3rem;
+    color: rgba(220, 219, 219, 0.847);
+    text-transform: uppercase;
+    padding: 5rem, 0;
+
 }
 
-.menu-btn {
+.home .content p{
+    font-size: 2.5rem;
+    color: rgba(220, 219, 219, 0.847);
+    padding: 5rem, 0;
+}
+
+
+
+.home .content .btn{
     display: inline-block;
-    cursor: pointer;
-    padding: 10px;
-    margin-right: 10px;
-    background-color: transparent;
-    border: none;
-}
-
-.menu-btn span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin-bottom: 5px;
-    background-color: #333;
-    transition: all 0.3s ease-in-out;
-}
-
-.menu-btn span:last-child {
-    margin-bottom: 0;
-}
-
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.navbar a {
-    margin-right: 20px;
-    color: #333;
+    border: 0.1rem solid grey;
+    background: var(--white);
+    padding: 0.5rem 3rem;
     text-decoration: none;
+    border-radius: 0.3rem;
+    margin-top:15%;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle:checked + .navbar {
-        display: block;
-    }
 
-    .menu-btn span {
-        background-color: #fff;
-    }
+.home .controls{
+    padding:1rem;
+    border-radius: 5rem;
+    position: relative;
+    top: 2rem;
 
-    .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 10px;
-    }
-
-    .navbar a {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
 }
+
+.home .controls .photo-btn{
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #edecec;
+    cursor: pointer;
+    margin: 0 .5rem;  
+
+}
+ 
+  .home .controls .photo-btn:hover {
+    background-color: #a8a7a7;
+    transition: background-color 0.6s ease;
+
+  }
+  
+
+  .home .controls .photo-btn.active{
+    background: var(--main-color);
+  }
+  
+
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .home .photo-container img{
+    position: absolute;
+    top:0; left:0;
+    z-index: -1;
+    height: 95%;
+    width: 100%;
+    object-fit: cover;
+  }
 </style>
+<script>
+    let photobtns = document.querySelectorAll('.photo-btn');
+let photoSlider = document.querySelector('#photo-slider');
 
+photobtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active class from all buttons
+    photobtns.forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    // Add active class to the clicked button
+    btn.classList.add('active');
+
+    // Change the src attribute of the photo-slider
+    let src = btn.getAttribute('data-src');
+    photoSlider.src = src;
+    photoSlider.alt = btn.alt;
+  });
+});
+
+</script>
 <!-- <script>
     // Look for .hamburger
   var hamburger = document.querySelector(".hamburger");
