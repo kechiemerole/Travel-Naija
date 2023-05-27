@@ -450,7 +450,6 @@ margin-left:5rem;
   .about-section .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
- 
     gap: .5rem;
   
   }
@@ -469,6 +468,7 @@ margin-left:5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
   }
 
   .about-section .box-container .box .image img{
@@ -490,7 +490,7 @@ margin-left:5rem;
 
   
  .about-section .about-content p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: var(--main-color);
     line-height: 2;
     /* padding: .5rem 0; */
