@@ -435,8 +435,8 @@ margin-left:5rem;
   /* about sectiion css */
   .about-section{
     padding-top: 3rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
   }
 
@@ -450,30 +450,26 @@ margin-left:5rem;
   .about-section .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: .0005rem;
-    display: flex; 
-     justify-content: center;
-    align-items: center;
+ 
+    gap: .5rem;
   
   }
 
 
   .about-section .box-container  .box .image{
+    
     height: 10rem;
     width: 12rem;
     border-radius: .5rem;
-    overflow: hidden;
-
+    overflow: hidden;    
+   
   }
-  
 
-    .about-section .box-container .box .image { 
-
-   justify-content: center;
-   align-items: center;
-   align-content: center;
-   ; } 
-
+  .about-section .box-container  .box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
   .about-section .box-container .box .image img{
     height: 10rem;
@@ -481,7 +477,6 @@ margin-left:5rem;
     object-fit: cover;
     border-radius: .5rem;
     border: .0005rem solid rgb(184, 184, 184);
-
 
  }
 
@@ -498,9 +493,11 @@ margin-left:5rem;
     font-size: 1rem;
     color: var(--main-color);
     line-height: 2;
-    padding: .5rem 0;
+    /* padding: .5rem 0; */
     justify-content: center;
     text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
 
  }
  .about-section .about-content p .btn{
