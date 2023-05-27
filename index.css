@@ -257,7 +257,7 @@ section{
 
 .btn{
     display: inline-block;
-    border: 0.1rem solid var(--sub-color);
+    border: .0005rem solid var(--sub-color);
     background: var(--white);
     padding: 0.5rem 3rem;
     text-decoration: none;
@@ -324,6 +324,17 @@ a.btn {
     from {opacity: .4}
     to {opacity: 1}
   }
+hr{
+  border: none;
+  border: .005rem solid var(--main-color); 
+margin-bottom: 1rem;
+display: flex;
+margin-right:5rem;
+margin-left:5rem;
+
+
+
+}
 
 
 
@@ -331,13 +342,17 @@ a.btn {
     position: absolute;
     top:0; left:0;
     z-index: -1;
-    height: 90%;
+    height: 95%;
     width: 100%;
     object-fit: cover;
   }
  
   .top-destinations{
-    padding: 5rem;
+    padding-top: 0;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+
   }
 
   .top-destinations .box-container{
@@ -363,15 +378,13 @@ a.btn {
  
   .top-destinations  h1{
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: .2rem;
     font-size: 2.5rem;
   }
   .top-destinations .box-container  .box image{
     height: 4rem;
     overflow: hidden;
     
-
-
   }
   
 
@@ -403,7 +416,7 @@ a.btn {
  .top-destinations .box-container .box p{
 
     font-size: 1rem;
-    color: lightskyblue;
+    color: var(--main-color);
     line-height: 2;
     padding: .5rem 0;
 
