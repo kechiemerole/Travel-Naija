@@ -429,8 +429,89 @@ margin-left:5rem;
     cursor: pointer;
     margin-top: 1rem;
 
-
-    
  }
 
- 
+
+  /* about sectiion css */
+  .about-section{
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+  }
+
+  /* .about-section .box-container .box {
+    background: var(--white);
+    border: .0005rem solid rgb(231, 231, 231);
+    border-radius: .5rem;
+    /* box-shadow: var(--soft-shadow); */
+  
+
+  .about-section .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: .0005rem;
+    display: flex; 
+     justify-content: center;
+    align-items: center;
+  
+  }
+
+
+  .about-section .box-container  .box .image{
+    height: 10rem;
+    width: 12rem;
+    border-radius: .5rem;
+    overflow: hidden;
+
+  }
+  
+
+    .about-section .box-container .box .image { 
+
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   ; } 
+
+
+  .about-section .box-container .box .image img{
+    height: 10rem;
+    width: 11rem;
+    object-fit: cover;
+    border-radius: .5rem;
+    border: .0005rem solid rgb(184, 184, 184);
+
+
+ }
+
+ .about-section  h1{
+    text-align: center;
+    padding-bottom: .2rem;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+  }
+
+
+  
+ .about-section .about-content p{
+    font-size: 1rem;
+    color: var(--main-color);
+    line-height: 2;
+    padding: .5rem 0;
+    justify-content: center;
+    text-align: center;
+
+ }
+ .about-section .about-content p .btn{
+
+    /* display: inline-block; */
+    border: .0005rem solid var(--sub-color);
+    background: var(--white);
+    padding: 0.5rem 3rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+
+ }
