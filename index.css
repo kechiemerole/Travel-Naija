@@ -312,8 +312,11 @@ a.btn {
     background: var(--main-color);
   }
   
+.fa-map-marker-alt {
+    /* font-size: .5rem; */
+}
 
-  
+
   /* Fading animation */
   .fade {
     animation-name: fade;
