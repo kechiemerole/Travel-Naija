@@ -522,3 +522,80 @@ margin-left:5rem;
     
 }
 
+.contact-section .about-content h1{
+    text-align: center;
+    padding-bottom: .2rem;
+    padding-top: 0rem;
+    font-size: 2.5rem;
+  }
+
+  .contact-section .box-container{
+    display:flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+  
+  .contact-section .box-container .image{
+    flex: 1 1 35rem;
+  }
+
+  .contact-section .box-container .image img{
+    width: 40rem;
+    border-radius: 45%;
+    margin-right: 0rem;
+
+  }
+
+  .contact-section form{
+    flex: 1 1 35rem;
+    padding: 2rem;
+    box-shadow: var(--soft-shadow);
+    border-radius: 3.5rem;
+    /* outline: .05rem solid var(--black); */
+  }
+  .contact-section form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.contact-section form span .btn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 0.005rem solid var(--sub-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  margin-top: 3rem;
+}
+
+.contact-section form .inputBox input{
+  width: 80%;
+  margin:1rem 0;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  color:#222;
+  justify-content: space-between;
+  border-radius: .5rem;
+
+
+}
+
+.contact-section form .inputBox textarea{
+  width: 80%;
+  margin:1rem 0;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  color:#222;
+  justify-content: space-between;
+  border-radius: .5rem;
+
+
+}
+
