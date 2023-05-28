@@ -490,7 +490,7 @@ margin-left:5rem;
 
   
  .about-section .about-content p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--main-color);
     line-height: 2;
     /* padding: .5rem 0; */
@@ -520,4 +520,33 @@ margin-left:5rem;
     transition: .5s;
     opacity: .7;
     
+}
+
+
+ .heading {
+    background: url(images/Ogbunike-Cave.jpg);
+    padding: 0rem;
+    background-repeat: no-repeat;
+    height: 20rem;
+    width: auto;
+    border-bottom-right-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+    /* outline: red dashed; */
+    background: cover;
+}
+
+.box .heading h1 {
+    position: relative;
+    color:var(--white);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* outline: yellow dashed; */
+}
+
+.box {
+    /* width: 100%;
+    height: 20rem; */
+    margin-bottom: 3rem;
+
 }
