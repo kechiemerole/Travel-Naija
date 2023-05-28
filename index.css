@@ -505,10 +505,19 @@ margin-left:5rem;
     /* display: inline-block; */
     border: .0005rem solid var(--sub-color);
     background: var(--white);
-    padding: 0.5rem 3rem;
+    padding: 0.25rem 3rem;
     border-radius: 0.3rem;
     margin-top: 1rem;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 
  }
+  
+
+ .about-section .about-content p .btn:hover{
+    background: rgb(182, 181, 181);
+    transition: .5s;
+    opacity: .7;
+    
+}
