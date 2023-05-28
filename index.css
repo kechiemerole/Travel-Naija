@@ -40,21 +40,26 @@ html{
 
 }
 
-html::webkit-scrollbar{
-    width: 0.5rem;
+html::-webkit-scrollbar{
+    width: .7rem;
+    border-radius: .3rem;
 
 }
 
-html::webkit-scrollbar-track{
+html::-webkit-scrollbar-track{
     background-color: var(--white);
 }
 
-html::webkit-scrollbar-thumb{
-    background-color: var(--main-color);
+html::-webkit-scrollbar-thumb{
+    background-color: grey;
+    
+    border-radius: .3rem;
+
+}
 }
 
-html::webkit-scrollbar-thumb:hover{
-    background-color: var(--main-color);
+html::-webkit-scrollbar-thumb:hover{
+    background-color: #222;
 }
 
 .header{
@@ -531,35 +536,37 @@ margin-left:5rem;
 
   .contact-section .box-container{
     display:flex;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center;
+    justify-content: center; */
 
   }
   
   .contact-section .box-container .image{
     flex: 1 1 35rem;
+
   }
 
   .contact-section .box-container .image img{
     width: 40rem;
-    border-radius: 45%;
     margin-right: 0rem;
-
+    /* outline: red dashed 1px; */
   }
 
   .contact-section form{
-    flex: 1 1 35rem;
+    flex: 1 1 30rem;
     padding: 2rem;
-    box-shadow: var(--soft-shadow);
-    border-radius: 3.5rem;
-    /* outline: .05rem solid var(--black); */
+    border-radius: 3rem;
+    background: var(--white);
+    border: .0005rem solid rgb(231, 231, 231);
+    margin-left: 0;
   }
+
   .contact-section form .inputBox{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 .contact-section form span .btn{
   display: flex;
@@ -581,8 +588,7 @@ margin-left:5rem;
   color:#222;
   justify-content: space-between;
   border-radius: .5rem;
-
-
+  background: whitesmoke;
 }
 
 .contact-section form .inputBox textarea{
@@ -595,6 +601,8 @@ margin-left:5rem;
   color:#222;
   justify-content: space-between;
   border-radius: .5rem;
+  background: whitesmoke;
+
 
 
 }
