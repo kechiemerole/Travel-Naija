@@ -635,7 +635,6 @@ margin-left:5rem;
   /* outline: dashed red 1px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height:20rem;
 }
 /* 
 *{
@@ -692,6 +691,8 @@ margin-left:5rem;
  text-align: center;
  padding-top: .8rem;
  padding-right: .8rem;
+ padding-left: .8rem;
+
  
 }
 
