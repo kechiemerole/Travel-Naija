@@ -622,8 +622,8 @@ margin-left:5rem;
   grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
   cursor: pointer;
-  margin-left: 8rem;
-  margin-right: 8rem;
+  margin-left: 5%;
+  margin-right: 5%;
 
 }
 
