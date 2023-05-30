@@ -618,7 +618,7 @@ margin-left:5rem;
 
 .packages-section .box-container{
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(1rem, 1fr));
   gap: 2rem;
   cursor: pointer;
   margin-left: 5%;
