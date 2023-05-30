@@ -620,7 +620,6 @@ margin-left:5rem;
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
-  
   cursor: pointer;
   margin-left: 5%;
   margin-right: 5%;
@@ -633,15 +632,15 @@ margin-left:5rem;
   border: .0005rem solid rgb(231, 231, 231);
   border-radius: .5rem;
   box-shadow: var(--soft-shadow);
-  outline: dashed red 1px;
+  /* outline: dashed red 1px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height:auto;
+  height:100%;
 }
-
+/* 
 *{
   border: dashed yellowgreen 1px;
-}
+} */
 
 .packages-section  h1{
   text-align: center;
@@ -665,10 +664,10 @@ margin-left:5rem;
 
 
 .packages-section .box-container .box .image{
-  outline: dashed rgb(30, 255, 0) 1px;
+  /* outline: dashed rgb(30, 255, 0) 1px; */
   width: 100%;
-  height: auto;
-  object-fit: top;
+  height: 100%;
+  object-fit: bottom;
 
 }
 
@@ -677,16 +676,15 @@ margin-left:5rem;
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transition: .2s linear;
   border-radius: .5rem  0 0 .5rem ;
   object-position: center;
-  outline: dashed rgb(188, 151, 19) 1px;
+  /* outline: dashed rgb(188, 151, 19) 1px; */
 }
 
 .packages-section .box-container .box:hover .image{
-  transition: 0.3s;
+  transition: 0.3s linear;
   opacity:0.7;
-  outline: dashed rgb(30, 255, 0) 1px;
+  /* outline: dashed rgb(30, 255, 0) 1px; */
 
 }
 
@@ -694,7 +692,7 @@ margin-left:5rem;
  text-align: center;
  padding-top: .8rem;
  padding-right: .8rem;
- padding-bottom: 0;
+ 
 }
 
 .packages-section .box-container .box p{
