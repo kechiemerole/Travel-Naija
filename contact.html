@@ -124,6 +124,46 @@
     navbar.classList.toggle('active');
 
   };
+
+
+function validateForm() {
+  const name = document.getElementById("nameInput").value.trim();
+  const subject = document.getElementById("subjectInput").value.trim();
+  const email = document.getElementById("emailInput").value.trim();
+  const message = document.getElementById("messageInput").value.trim();
+
+  
+   if (containsSpecialCharacters(name)) {
+    alert("Name should not contain special characters.");
+    return false;
+  }
+
+  if (subject === "") {
+    alert("Please enter a subject.");
+    return false;
+  }
+
+  if (email === "") {
+    alert("Please enter your email address.");
+    return false;
+  } else if (!validateEmail(email)) {
+    alert("Please enter a valid email address.");
+    return false;
+  }
+
+  if (message === "") {
+    alert("Please enter a message.");
+    return false;
+  }
+
+  return true;
+}
+
+function validateEmail(email) {
+  // Regular expression pattern for email validation
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+}
   </script>
 
 

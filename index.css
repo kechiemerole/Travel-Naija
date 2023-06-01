@@ -727,7 +727,7 @@ font-weight: bolder;
 .services .box-container{
   display: wrap;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: .5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
@@ -759,4 +759,4 @@ color:var(--main-color);
     padding: 1rem 0;
     }
     
-  
+ 
