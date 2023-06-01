@@ -674,13 +674,13 @@ font-weight: bolder;
   /* outline: dashed rgb(30, 255, 0) 1px; */
   width: 100%;
 
-  object-fit: cover;
+  object-fit: contain;
 
 }
 
 
 .packages-section .box-container .box img{
-  height: 10%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: .5rem  0 0 .5rem ;
