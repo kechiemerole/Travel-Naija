@@ -29,6 +29,8 @@ font-family: 'Source Sans Pro', sans-serif; */
 
 }
 
+
+
 body {
     font-size: 100%;
     overflow-x: hidden;
@@ -610,6 +612,11 @@ margin-left:5rem;
 .packages-section .about-content p {
   text-align: center;
 }
+.packages-section .about-content a {
+color: var(--main-color);
+font-weight: bolder;
+}
+
 
 .packages-section{
   padding-left: 3rem;
@@ -635,6 +642,7 @@ margin-left:5rem;
   /* outline: dashed red 1px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
+  
 }
 /* 
 *{
@@ -674,7 +682,7 @@ margin-left:5rem;
 .packages-section .box-container .box img{
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: .5rem  0 0 .5rem ;
   object-position: center;
   /* outline: dashed rgb(188, 151, 19) 1px; */
@@ -710,3 +718,45 @@ margin-left:5rem;
 
 }
 
+.services  h1{
+  text-align: center;
+  padding-bottom: .2rem;
+  font-size: 2.5rem;
+}
+
+.services .box-container{
+  display: wrap;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+}
+
+.services .box-container .box{
+  flex: 1 1 30rem;
+  border-radius: .3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.services .box-container .box i{
+padding: 1rem;
+font-size: 3rem;
+color:var(--main-color);
+
+}
+
+.services .box-container .box h3{
+  font-size: 1.5rem;
+  color:var(--sub-color);
+  
+  }
+
+  .services .box-container .box p{
+    font-size: 1rem;
+    color:var(--sub-color);
+    padding: 1rem 0;
+    }
+    
+  
