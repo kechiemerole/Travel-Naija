@@ -761,4 +761,16 @@ color:var(--main-color);
     padding: 1rem 0;
     }
     
- 
+ .heading{
+  background-size: cover !important;
+  background-position: cover: !important;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .heading h1{
+  color: var(--white)
+ }
