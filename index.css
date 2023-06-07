@@ -836,3 +836,22 @@ color: var(--black);
   background: white;
 cursor: pointer;
 }
+
+.experiences .search-bar .btn{
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  border: var(--border);
+}
+
+.products{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1rem;
+  padding: 2rem 0;
+}
+
+.card{
+  background-color: var(--white);
+  max-width: 10rem;
+  
+}
