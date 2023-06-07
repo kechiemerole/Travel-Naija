@@ -1,167 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Naija</title><link href="dist/hamburgers.css" rel="stylesheet">
-</head>
-<body>
-
-
-    <section class = "home" id="home">
-        <div class="content">
-          <h3>adventure is worth while</h3>
-          <p>discover nigeria with us, the adventure awaits</p>
-          <a href="#" class="btn">discover more</a>    
-  </div>
-  
-  <div class="controls">
-    <span class="photo-btn active" data-src="images/calabar-carnival.jpg"></span>
-    <span class="photo-btn" data-src="images/Ogbunike-cave-front.jpg"></span>
-    <span class="photo-btn" data-src="images/obudu-mountain-resort.jpg"></span>
-    <span class="photo-btn" data-src="images/lekki-link-bridge.jpg"></span>
-  </div>
-  
-  <div class="photo-container">
-    <img src="images/calabar-carnival.jpg" id="photo-slider"alt="calabar carnival photo">
-  </div>
-  </section>
-
-</body>
-
-<style>
-
-.home{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-flow: column;
-    position: relative;
-    z-index:0 ;
-
-}
-
-.home .content{
-    text-align: center;
-    margin-top: 8rem;
-    /* padding: 2rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column; */
-
-}
-
-.home .content h3{
-    font-size: 3rem;
-    color: rgba(220, 219, 219, 0.847);
-    text-transform: uppercase;
-    padding: 5rem, 0;
-
-}
-
-.home .content p{
-    font-size: 2.5rem;
-    color: rgba(220, 219, 219, 0.847);
-    padding: 5rem, 0;
-}
-
-
-
-.home .content .btn{
-    display: inline-block;
-    border: 0.1rem solid grey;
-    background: var(--white);
-    padding: 0.5rem 3rem;
-    text-decoration: none;
-    border-radius: 0.3rem;
-    margin-top:15%;
-}
-
-
-.home .controls{
-    padding:1rem;
-    border-radius: 5rem;
-    position: relative;
-    top: 2rem;
-
-}
-
-.home .controls .photo-btn{
-    height: 1rem;
-    width: 1rem;
-    display: inline-block;
-    border-radius: 50%;
-    background: #edecec;
-    cursor: pointer;
-    margin: 0 .5rem;  
-
-}
- 
-  .home .controls .photo-btn:hover {
-    background-color: #a8a7a7;
-    transition: background-color 0.6s ease;
-
-  }
-  
-
-  .home .controls .photo-btn.active{
-    background: var(--main-color);
-  }
-  
-
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  .home .photo-container img{
-    position: absolute;
-    top:0; left:0;
-    z-index: -1;
-    height: 95%;
-    width: 100%;
-    object-fit: cover;
-  }
-</style>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Topwear')">
+          Topwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Bottomwear')">
+          Bottomwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Jacket')">
+          Jacket
+        </button>
+        <button class="button-value" onclick="filterProduct('Watch')">
+          Watch
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    
 <script>
-    let photobtns = document.querySelectorAll('.photo-btn');
-let photoSlider = document.querySelector('#photo-slider');
-
-photobtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    // Remove active class from all buttons
-    photobtns.forEach(btn => {
-      btn.classList.remove('active');
+    let products = {
+      data: [
+        {
+          productName: "Regular White T-Shirt",
+          category: "Topwear",
+          price: "30",
+          image: "images\calabar-carnival.jpg",
+        },
+        {
+          productName: "Beige Short Skirt",
+          category: "Bottomwear",
+          price: "49",
+          image: "images\lekki-link-bridge.jpg",
+        },
+        {
+          productName: "Sporty SmartWatch",
+          category: "Watch",
+          price: "99",
+          image: "images\travel-naija-logo.png",
+        },
+        {
+          productName: "Basic Knitted Top",
+          category: "Topwear",
+          price: "29",
+          image: "images\travel-naija-logo.png",
+        },
+        {
+          productName: "Black Leather Jacket",
+          category: "museum",
+          price: "129",
+          image: "images\travel-naija-logo.png",
+        },
+        {
+          productName: "Stylish Pink Trousers",
+          category: "Bottomwear",
+          price: "89",
+          image: "images\travel-naija-logo.png",
+        },
+        {
+          productName: "Brown Men's Jacket",
+          category: "Jacket",
+          price: "189",
+          image: "images\travel-naija-logo.png",
+        },
+        {
+          productName: "Comfy Gray Pants",
+          category: "Bottomwear",
+          price: "49",
+          image: "images\travel-naija-logo.png",
+        },
+      ],
+    };
+    
+    for (let i of products.data) {
+      //Create Card
+      let card = document.createElement("div");
+      //Card should have category and should stay hidden initially
+      card.classList.add("card", i.category, "hide");
+      //image div
+      let imgContainer = document.createElement("div");
+      imgContainer.classList.add("image-container");
+      //img tag
+      let image = document.createElement("img");
+      image.setAttribute("src", i.image);
+      imgContainer.appendChild(image);
+      card.appendChild(imgContainer);
+      //container
+      let container = document.createElement("div");
+      container.classList.add("container");
+      //product name
+      let name = document.createElement("h5");
+      name.classList.add("product-name");
+      name.innerText = i.productName.toUpperCase();
+      container.appendChild(name);
+      //price
+      let price = document.createElement("h6");
+      price.innerText = "$" + i.price;
+      container.appendChild(price);
+    
+      card.appendChild(container);
+      document.getElementById("products").appendChild(card);
+    }
+    
+    //parameter passed from button (Parameter same as category)
+    function filterProduct(value) {
+      //Button class code
+      let buttons = document.querySelectorAll(".button-value");
+      buttons.forEach((button) => {
+        //check if value equals innerText
+        if (value.toUpperCase() == button.innerText.toUpperCase()) {
+          button.classList.add("active");
+        } else {
+          button.classList.remove("active");
+        }
+      });
+    
+      //select all cards
+      let elements = document.querySelectorAll(".card");
+      //loop through all cards
+      elements.forEach((element) => {
+        //display all cards on 'all' button click
+        if (value == "all") {
+          element.classList.remove("hide");
+        } else {
+          //Check if element contains category class
+          if (element.classList.contains(value)) {
+            //display element based on category
+            element.classList.remove("hide");
+          } else {
+            //hide other elements
+            element.classList.add("hide");
+          }
+        }
+      });
+    }
+    
+    //Search button click
+    document.getElementById("search").addEventListener("click", () => {
+      //initializations
+      let searchInput = document.getElementById("search-input").value;
+      let elements = document.querySelectorAll(".product-name");
+      let cards = document.querySelectorAll(".card");
+    
+      //loop through all elements
+      elements.forEach((element, index) => {
+        //check if text includes the search value
+        if (element.innerText.includes(searchInput.toUpperCase())) {
+          //display matching card
+          cards[index].classList.remove("hide");
+        } else {
+          //hide others
+          cards[index].classList.add("hide");
+        }
+      });
     });
-
-    // Add active class to the clicked button
-    btn.classList.add('active');
-
-    // Change the src attribute of the photo-slider
-    let src = btn.getAttribute('data-src');
-    photoSlider.src = src;
-    photoSlider.alt = btn.alt;
-  });
-});
-
-</script>
-<!-- <script>
-    // Look for .hamburger
-  var hamburger = document.querySelector(".hamburger");
-  // On click
-  hamburger.addEventListener("click", function() {
-    // Toggle class "is-active"
-    hamburger.classList.toggle("is-active");
-    // Do something else, like open/close menu
-  });
-</script> -->
+    
+    //Initially display all products
+    window.onload = () => {
+      filterProduct("all");
+    };
+  </script>
+  </body>
 </html>
