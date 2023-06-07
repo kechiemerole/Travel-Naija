@@ -805,7 +805,6 @@ color:var(--main-color);
   padding-bottom: .5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  /* outline: 1px yellow dashed; */
  }
 
  .search input {
@@ -815,6 +814,7 @@ color:var(--main-color);
   padding: .5rem;
   font-size: 1rem;
 /* color: var(--main-color); */
+
 color: var(--black);
 
  }
@@ -833,8 +833,9 @@ color: var(--black);
   /* border-radius: 50%; */
   height: 3rem;
   width: 3rem;
-  background: white;
+  background: transparent;
 cursor: pointer;
+
 }
 
 .experiences .search-bar .btn{
@@ -853,5 +854,5 @@ cursor: pointer;
 .card{
   background-color: var(--white);
   max-width: 10rem;
-  
+
 }
