@@ -764,14 +764,14 @@ color:var(--main-color);
  .heading{
    background-size: cover !important;
   background-position: cover: !important;
-  padding: 2rem;
+  padding: 1.5rem;
   /* padding-bottom: 2rem; */
   display: flex;
   align-items: center;
   justify-content: center;
   /* height: 20rem; */
-  font-size: 4.5rem;  
-  outline: green 1px dashed;
+  font-size: 3.5rem;  
+  outline: pink 1px dashed;
  }
 
  .heading h1{
