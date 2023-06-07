@@ -762,15 +762,21 @@ color:var(--main-color);
     }
     
  .heading{
-  background-size: cover !important;
+   background-size: cover !important;
   background-position: cover: !important;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 23rem;
+  font-size: 7rem;
+  outline: red dashed 1px; 
+  
  }
 
  .heading h1{
   color: var(--white)
  }
+
+ 
