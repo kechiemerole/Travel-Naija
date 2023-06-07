@@ -770,8 +770,8 @@ color:var(--main-color);
   align-items: center;
   justify-content: center;
   /* height: 20rem; */
-  font-size: 5rem;  
-  outline: yellow 1px dashed;
+  font-size: 4.5rem;  
+  outline: green 1px dashed;
  }
 
  .heading h1{
