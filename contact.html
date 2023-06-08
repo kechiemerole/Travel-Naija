@@ -52,7 +52,7 @@
         </div>
     
 
-    <form action="">
+    <form action="" onsubmit="return validateForm()">
         <div class="inputBox">
             <input type="text" placeholder="name" >
             <input type="text" placeholder="subject">
@@ -60,7 +60,8 @@
             <div class="inputBox">
             <textarea placeholder="message" name="" id="" cols="60" rows="6"></textarea>
         </div>
-        <span class="btn">send</span>
+        <input type="submit" class="btn" value="send ">
+        <!-- <span class="btn">send</span> -->
 
     </form>
   </div>
@@ -70,58 +71,20 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--------------------------------------------------------------------------------------------------------------------------------------------script -->
 
 <script>
-  let menu = document.querySelector('#menu-btn');
+ let menu = document.querySelector('#menu-btn');
   let navbar = document.querySelector('.header .navbar');
 
   menu.onclick = () => {
     menu.classList.toggle('fa-times');
-    navbar.classList.toggl
+    navbar.classList.toggle('active');
+
+  };
+
+  
+
 
   </script>
 
