@@ -843,6 +843,13 @@ cursor: pointer;
   border-radius: 1.5rem;
   border: var(--border);
 font-size: .7rem;
+color: var(--main-color);
+font-weight: bolder;
+cursor: pointer;
+}
+
+.experiences .search-bar .btn:hover{
+  color: var(--white)
 }
 
 
@@ -861,6 +868,7 @@ font-size: .7rem;
 body {
   background-color: #f5f8ff;
 }
+
 .wrapper {
   width: 95%;
   margin: 0 auto;
@@ -944,3 +952,7 @@ img {
     grid-column-gap: 1em;
   }
 }
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+

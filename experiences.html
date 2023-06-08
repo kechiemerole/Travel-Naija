@@ -47,10 +47,17 @@
       <input type="text" placeholder="search a tour, city or state" name="q">
       <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
-    <a href="#" class="btn">Museums</a>
-    <a href="#" class="btn">Attractions</a>
-    <a href="#" class="btn">events</a>
-
+    <div id="buttons">
+   
+    <button class="btn" onclick="filterProduct('All')">
+    All </button>
+    <button class="btn" onclick="filterProduct('Museums')">
+    Museums </button>
+    <button class="btn" onclick="filterProduct('Attractions')">
+    Attractions </button>
+    <button class="btn" onclick="filterProduct('events')">
+    events </button>
+  </div>
   </div>
 </div>
 
@@ -95,6 +102,62 @@
     navbar.classList.toggle('active');
 
   };
+
+  
+    let products = {
+      data: [
+        {
+          productName: "Calabar Carnival",
+          category: "Topwear",
+          price: "30",
+          image: "images/calabar-carnival.jpg",
+        },
+        {
+          productName: "Beige Short Skirt",
+          category: "Bottomwear",
+          price: "49",
+          image: "images/lekki-link-bridge.jpg",
+        },
+        {
+          productName: "Sporty SmartWatch",
+          category: "Watch",
+          price: "99",
+          image: "images/travel-naija-logo.png",
+        },
+        {
+          productName: "Basic Knitted Top",
+          category: "Topwear",
+          price: "29",
+          image: "images\travel-naija-logo.png",
+        },
+        {
+          productName: "Black Leather Jacket",
+          category: "museum",
+          price: "129",
+          image: "images\travel-naija-logo.png",
+        },
+        {
+          productName: "Stylish Pink Trousers",
+          category: "Bottomwear",
+          price: "89",
+          image: "images\travel-naija-logo.png",
+        },
+        {
+          productName: "Brown Men's Jacket",
+          category: "Jacket",
+          price: "189",
+          image: "images\travel-naija-logo.png",
+        },
+        {
+          productName: "Comfy Gray Pants",
+          category: "Bottomwear",
+          price: "49",
+          image: "images\travel-naija-logo.png",
+        },
+      ],
+    };
+
+
   </script>
 
 
