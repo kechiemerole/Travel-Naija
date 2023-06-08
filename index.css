@@ -719,9 +719,8 @@ font-weight: bolder;
 }
 
 .services .box-container{
-  display: wrap; */
+  display: wrap; 
   gap: 2rem;
-  /* display: grid; */
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -730,8 +729,9 @@ font-weight: bolder;
 .services .box-container .box{
   flex: 1 1 10rem;
   border-radius: .3rem;
-  padding: 1rem;
+  padding: .5rem;
   text-align: center;
+  outline: 1px yellow dashed;
 }
 
 .services .box-container .box i{
