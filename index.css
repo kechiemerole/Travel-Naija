@@ -458,17 +458,20 @@ margin-left:5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: .5rem;
-  
+    flex-wrap: wrap;
+    justify-content: center;
+display: flex;
   }
 
 
   .about-section .box-container  .box .image{
     
     height: 10rem;
-    width: 12rem;
+    width: 11rem;
     border-radius: .5rem;
     overflow: hidden;    
-   
+    flex-wrap: wrap;
+
   }
 
   .about-section .box-container  .box{
