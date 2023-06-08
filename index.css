@@ -720,7 +720,7 @@ font-weight: bolder;
 
 .services .box-container{
   display: wrap; */
-  gap: .5rem;
+  gap: 2rem;
   /* display: grid; */
   display: grid;
   justify-content: center;
