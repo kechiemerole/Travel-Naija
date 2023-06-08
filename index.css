@@ -453,7 +453,7 @@ margin-left:5rem;
     border-radius: .5rem;
     /* box-shadow: var(--soft-shadow); */
   
-
+   
   .about-section .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -503,11 +503,10 @@ display: flex;
     font-size: 1rem;
     color: var(--main-color);
     line-height: 2;
-    /* padding: .5rem 0; */
     justify-content: center;
     text-align: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
  }
  .about-section .about-content p .btn{
