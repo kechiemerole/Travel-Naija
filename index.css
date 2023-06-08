@@ -731,7 +731,7 @@ font-weight: bolder;
   border-radius: .3rem;
   padding: .5rem;
   text-align: center;
-  outline: 1px yellow dashed;
+  /* outline: 1px yellow dashed; */
 }
 
 .services .box-container .box i{
