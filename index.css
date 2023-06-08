@@ -720,7 +720,7 @@ font-weight: bolder;
 
 .services .box-container{
   display: wrap; 
-  gap: 2rem;
+  gap: 1rem;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
