@@ -719,12 +719,12 @@ font-weight: bolder;
 }
 
 .services .box-container{
-  display: wrap;
+  /* display: wrap; */
   flex-wrap: wrap;
   gap: .5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+outline: yellow 1px dashed;
 }
 
 .services .box-container .box{
