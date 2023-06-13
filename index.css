@@ -365,18 +365,29 @@ margin-left:5rem;
     
   }
 
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+
+
   .top-destinations .box-container{
   
     /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
     gap: 1rem;
     cursor: pointer;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap ;
     justify-content: center;
-
-
-
-
   }
 
 
