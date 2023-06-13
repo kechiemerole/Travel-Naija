@@ -360,17 +360,20 @@ margin-left:5rem;
  
   .top-destinations{
     padding-top: 0;
-    padding-left: 5rem;
-    padding-right: 5rem;
-
-
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
   }
 
   .top-destinations .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 2rem;
+  
+    /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
+    gap: 1rem;
     cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 
 
 
@@ -382,7 +385,8 @@ margin-left:5rem;
     border: .0005rem solid rgb(231, 231, 231);
     border-radius: .5rem;
     /* box-shadow: var(--soft-shadow); */
-
+    flex: 0 0 25rem; /* Adjust the width as needed */
+    /* margin: 10px; */
 
   }
 
@@ -432,6 +436,21 @@ margin-left:5rem;
     padding: .5rem 0;
 
  }
+/* 
+ .top-destinations .box-container .box .content span{
+
+  color: var(--main-color);
+  line-height: 2;
+  padding: .5rem 0;
+
+} */
+
+.top-destinations .box-container .box .content .fa-map-marker-alt{
+
+  color: var(--main-color);
+  line-height: 2;
+  padding: .5rem 0;
+}
 
  .top-destinations .box-container .box  .content .btn{
     cursor: pointer;
