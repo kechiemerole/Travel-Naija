@@ -52,15 +52,15 @@
         </div>
     
 
-    <form action="" onsubmit="return validateForm()">
+    <form action="book.php">
         <div class="inputBox">
 
-            <input type="text" placeholder="name" required >
+            <input type="text" placeholder="name" required pattern="[A-Za-z]+" >
 
             <input type="text" placeholder="subject" required>
-            <input type="text" placeholder="email" required></div>
+            <input type="email" placeholder="email" required ></div>
             <div class="inputBox">
-            <textarea placeholder="message" name="" id="" cols="60" rows="6" required></textarea>
+            <textarea placeholder="message" name="" id="" cols="60" rows="6" required ></textarea>
         </div>
         <input type="submit" class="btn" value="send ">
         <!-- <span class="btn">send</span> -->
@@ -85,9 +85,26 @@
 
   };
 
-  
+  const nameInput = document.querySelector("input");
 
+nameInput.addEventListener("input", () => {
+  nameInput.setCustomValidity("");
+  nameInput.checkValidity();
+});
 
+nameInput.addEventListener("invalid", () => {
+  if (nameInput.value === "") {
+    nameInput.setCustomValidity("Enter your username!");
+  } else {
+    nameInput.setCustomValidity(
+      "Usernames can only contain upper and lowercase letters. Try again!"
+    );
+  }
+});
+
+if (isset($_POST['submit'])) {
+    echo "Your Form Has Been Submitted";
+}
   </script>
 
 
@@ -106,7 +123,7 @@
 
     <div class="box">
       <h3>extra links</h3>
-      <a href="#"><i class="fas fa-angle-right"></i>ask questions</a>
+      <a href="contact.html"><i class="fas fa-angle-right"></i>ask questions</a>
       <a href="about.html" ><i class="fas fa-angle-right"></i>About us</a>
       <a href="#" ><i class="fas fa-angle-right"></i>privacy policy</a>
       <a href="#" ><i class="fas fa-angle-right"></i>terms</a>

@@ -191,6 +191,26 @@ section{
     padding-bottom: 0.5rem;
 }
 
+input:invalid {
+  border: 1px solid red;
+}
+
+input:invalid + span::before {
+  content: "✖";
+  color: red;
+}
+
+textarea:invalid + span::before {
+  content: "✖";
+  color: red;
+}
+
+
+input:valid + span::before {
+  content: "✓";
+  color: green;
+}
+
 .footer .box-container .box a{
     color: var(--white);
     font-size: .7rem;
