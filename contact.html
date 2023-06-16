@@ -53,18 +53,14 @@
     
 
     <form action="" onsubmit="return validateForm()">
-        <div class="inputBox"  role="textbox"
-        contenteditable
-        aria-labelledby="tblabel"
-        aria-required="true"
-        >
+        <div class="inputBox">
 
-            <input type="text" placeholder="name" >
+            <input type="text" placeholder="name" required >
 
-            <input type="text" placeholder="subject">
-            <input type="text" placeholder="email"></div>
+            <input type="text" placeholder="subject" required>
+            <input type="text" placeholder="email" required></div>
             <div class="inputBox">
-            <textarea placeholder="message" name="" id="" cols="60" rows="6"></textarea>
+            <textarea placeholder="message" name="" id="" cols="60" rows="6" required></textarea>
         </div>
         <input type="submit" class="btn" value="send ">
         <!-- <span class="btn">send</span> -->
