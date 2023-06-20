@@ -192,12 +192,12 @@ section{
 }
 
 input:invalid {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 input:invalid + span::before {
   content: "✖";
-  color: red;
+  /* color: red; */
 }
 
 textarea:invalid + span::before {
