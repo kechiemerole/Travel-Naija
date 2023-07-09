@@ -456,7 +456,7 @@ margin-left:5rem;
 
  .top-destinations .box-container .box .content{
    text-align: center;
-   padding: 1.5rem;
+   padding: 1rem;
  }
 
  .top-destinations .box-container .box p{
@@ -464,7 +464,7 @@ margin-left:5rem;
     font-size: .9rem;
     color: var(--main-color);
     line-height: 1.5;
-    padding: .5rem 0;
+    padding: 0rem 0;
 
  }
 /* 
@@ -479,7 +479,7 @@ margin-left:5rem;
 .top-destinations .box-container .box .content .fa-map-marker-alt{
 
   color: var(--main-color);
-  line-height: 2;
+  line-height: 1;
   padding: .5rem 0;
 }
 
