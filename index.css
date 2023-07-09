@@ -430,6 +430,7 @@ margin-left:5rem;
   .top-destinations .box-container  .box image{
     height: 1rem;
     overflow: hidden;
+
     
   }
   
@@ -438,7 +439,6 @@ margin-left:5rem;
     transition: 0.3s;
     opacity:0.7;
     object-fit: cover;
-
   
   }
 
@@ -461,9 +461,9 @@ margin-left:5rem;
 
  .top-destinations .box-container .box p{
 
-    font-size: 1rem;
+    font-size: .9rem;
     color: var(--main-color);
-    line-height: 2;
+    line-height: 1.5;
     padding: .5rem 0;
 
  }

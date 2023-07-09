@@ -425,9 +425,9 @@ margin-left:5rem;
 
  .top-destinations .box-container .box p{
 
-    font-size: .7rem;
+    font-size: 1rem;
     color: var(--main-color);
-    line-height: 2;
+    line-height: 1;
     padding: .5rem 0;
 
  }
