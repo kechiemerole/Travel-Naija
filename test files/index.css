@@ -398,10 +398,10 @@ margin-left:5rem;
   
 
   .top-destinations .box-container .box:hover .image img{
-    /* transition: 0.3s; */
-    /* opacity:0.7; */
+    transition: 0.3s; 
+    opacity:0.7;
     object-fit: cover;
-    transform: scale(1.5); 
+    /* transform: scale(1.5);  */
 
   
   }
@@ -425,7 +425,7 @@ margin-left:5rem;
 
  .top-destinations .box-container .box p{
 
-    font-size: 1rem;
+    font-size: .7rem;
     color: var(--main-color);
     line-height: 2;
     padding: .5rem 0;
