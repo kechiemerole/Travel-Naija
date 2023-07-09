@@ -398,9 +398,10 @@ margin-left:5rem;
   
 
   .top-destinations .box-container .box:hover .image img{
-    transition: 0.3s;
-    opacity:0.7;
+    /* transition: 0.3s; */
+    /* opacity:0.7; */
     object-fit: cover;
+    transform: scale(1.5); 
 
   
   }
