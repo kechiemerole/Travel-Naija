@@ -803,7 +803,6 @@ font-weight: bolder;
   /* flex-wrap: wrap; */
   gap: .5rem;
   display: grid;
-  outline: 1px dashed yellow;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
 }
