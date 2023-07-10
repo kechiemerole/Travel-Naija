@@ -36,9 +36,11 @@ font-family: 'Source Sans Pro', sans-serif; */
 body {
     font-size: 100%;
     overflow-x: hidden;
-    background: whitesmoke;
+    /* background: whitesmoke; */
 
 }
+
+
 html{
     scroll-behavior: smooth;
 
