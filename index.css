@@ -1016,13 +1016,13 @@ cursor: pointer;
 .top-destinations{
   opacity: .2;
   transition: all 3s;
-  transform: translateY(13rem);
+  transform: translateY(16rem);
  }
 
  .services{
   opacity: .2;
   transition: 3s;
-  transform: translateY(16rem);
+  transform: translateY(8rem);
  }
 
 
