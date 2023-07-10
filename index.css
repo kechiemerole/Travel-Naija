@@ -801,7 +801,6 @@ font-weight: bolder;
 .services .box-container{
   display: wrap; 
   flex-wrap: wrap;
-outline: dashed 1px red;
   gap: .5rem;
   display: grid;
   justify-content: center;
