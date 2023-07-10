@@ -15,6 +15,8 @@ font-family: 'Source Sans Pro', sans-serif; */
     --border: 0.1rem solid rgb(198, 198, 198);
     --soft-shadow: 0 .1rem  .7rem rgb(83, 83, 83);
     --sub-color: rgb(0, 31, 0);
+    --new-border: rgb(184, 184, 184);
+
 }
 
 *{
@@ -283,13 +285,12 @@ input:valid + span::before {
 
 .btn{
     display: inline-block;
-    border: .0005rem solid var(--sub-color);
+    border: .00005rem solid var(--new-border);
     background: var(--white);
-    padding: 0.5rem 3rem;
+    padding: 0.7rem 3rem;
     text-decoration: none;
-    border-radius: 0.3rem;
+    border-radius: 0.7rem;
     margin-top:15%;
-    color: green;
     cursor: pointer;
     
 }
@@ -326,6 +327,7 @@ a.btn {
     background: #edecec;
     cursor: pointer;
     margin: 0 .5rem;  
+
 
 }
  
@@ -450,13 +452,27 @@ margin-left:5rem;
     width: 100%;
     object-fit: cover;
     transition: .2s linear;
-    border-radius: .5rem .5rem 0 0;
+    border-radius: .5rem .5rem .3rem .3rem ;
+    /* border-radius: .5rem .5rem 0 0; */
 
  }
+
+
+
+ .top-destinations .box-container .box .image .btn {
+  /* position: relative; */
+  margin-right: 3rem;
+  margin-top: 0rem  !important;
+ transform: translate(25%, -120%);
+  -ms-transform: translate(-0%, -130%);
+
+}
 
  .top-destinations .box-container .box .content{
    text-align: center;
    padding: 1rem;
+ 
+
  }
 
  .top-destinations .box-container .box p{
@@ -464,7 +480,7 @@ margin-left:5rem;
     font-size: .9rem;
     color: var(--main-color);
     line-height: 1.5;
-    padding: 0rem 0;
+    /* padding: 0rem 0; */
 
  }
 /* 
@@ -486,6 +502,8 @@ margin-left:5rem;
  .top-destinations .box-container .box  .content .btn{
     cursor: pointer;
     margin-top: 1rem;
+    border-radius: .7rem;
+    border-color: var(--main-color);
 
  }
 
