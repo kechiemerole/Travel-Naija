@@ -335,8 +335,10 @@ const observer = new IntersectionObserver((entries) => {
     }
 });
 });
-const hiddenElements = document.querySelectorAll('.top-destinations')
+const hiddenElements = document.querySelectorAll('.top-destinations, .services')
 hiddenElements.forEach((el) => observer.observe(el));
+
+
 
   </script>
 

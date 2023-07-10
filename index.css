@@ -1019,6 +1019,13 @@ cursor: pointer;
   transform: translateY(13rem);
  }
 
+ .services{
+  opacity: .2;
+  transition: 3s;
+  transform: translateY(16rem);
+ }
+
+
 .show{
   opacity: 1;
   transform: translateX(0);
