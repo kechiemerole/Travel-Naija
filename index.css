@@ -1,4 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:wght@200;700&family=Poppins:wght@200;600&family=Source+Sans+Pro&display=swap');
+  
 
 /* font-family: 'DM Serif Text', serif;
 font-family: 'Montserrat', sans-serif;
@@ -1010,8 +1011,23 @@ cursor: pointer;
   cursor: pointer;
   margin-top: 0;
 }
+/* @media(prefers-reduced-motion){
+  top-destinations{
+    transition: none;
+} */
+.top-destinations{
+  opacity: .2;
+  transition: all 3s;
+  transform: translateY(100px);
+ }
+
+.show{
+  opacity: 1;
+  transform: translateX(0);
+}
 
 
+  
 /* test */
 /* * {
   padding: 0;
