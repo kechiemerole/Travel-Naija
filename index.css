@@ -800,10 +800,12 @@ font-weight: bolder;
 
 .services .box-container{
   display: wrap; 
+  flex-wrap: wrap;
+outline: dashed 1px red;
   gap: .5rem;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
 .services .box-container .box{
