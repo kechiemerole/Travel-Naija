@@ -1018,7 +1018,7 @@ cursor: pointer;
 .top-destinations{
   opacity: .2;
   transition: all 3s;
-  transform: translateY(100px);
+  transform: translateY(13rem);
  }
 
 .show{
