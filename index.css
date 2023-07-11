@@ -412,7 +412,8 @@ margin-left:5rem;
 
 
   .top-destinations .box-container{
-  
+    flex: 1 1 10rem;
+
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
     cursor: pointer;
@@ -1095,7 +1096,8 @@ margin-left:5rem;
 }
 
 .reviews .box-container{
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
   display: grid;
   justify-content: center;
   flex-wrap: wrap;
@@ -1108,7 +1110,7 @@ margin-left:5rem;
   
   flex: 1 1 10rem;
   border-radius: .3rem;
-  padding: .5rem;
+  padding: 1rem .5rem;
   text-align: center;
   /* outline: 2px rgb(24, 22, 177) dashed; */
   height: 15rem;
