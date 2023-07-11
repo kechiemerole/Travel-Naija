@@ -882,10 +882,7 @@ color:var(--main-color);
   outline: none;
   padding: .5rem;
   font-size: 1rem;
-/* color: var(--main-color); */
-
-color: var(--black);
-
+  color: var(--black);
  }
 
  ::placeholder{
@@ -932,7 +929,7 @@ cursor: pointer;
 .experience{
   padding-top: 0;
   padding-left: 5rem;
-  padding-right: 5rem;
+  padding-right: 1rem;
 
 
 }
@@ -944,8 +941,6 @@ cursor: pointer;
   cursor: pointer;
   flex-wrap: wrap;
 
-
-
 }
 
 
@@ -953,22 +948,29 @@ cursor: pointer;
   background: var(--white);
   border: .0005rem solid rgb(231, 231, 231);
   border-radius: .5rem;
-  width: 25em;
-  justify-content: center;
-  align-items: center;
-  /* box-shadow: var(--soft-shadow); */
-
-
+  width: 20rem;
 }
 
-.experience hr{
-  margin-top: 1rem;
- 
+.experience  h1 {
+  text-align: center;
+  padding-bottom: 0rem;
+  font-size: 2.5rem;
+  color: var(--sub-color);
 }
+
+
 .experience .box-container  .box image{
   height: 1rem;
   overflow: hidden;
   
+} 
+.experience hr {
+border: none;
+border: .005rem solid var(--main-color); 
+margin-bottom: 1rem;
+display: flex;
+margin-right:5rem;
+margin-left:5rem;
 }
 
 
