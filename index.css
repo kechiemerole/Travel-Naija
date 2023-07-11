@@ -422,6 +422,7 @@ margin-left:5rem;
   }
 
 
+
   .top-destinations .box-container .box {
     background: var(--white);
     border: .05rem solid rgb(231, 231, 231);
@@ -1089,12 +1090,15 @@ margin-left:5rem;
 }
 
 .reviews .box-container{
-  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5rem 0;
   padding: 0 2rem;
 
   display: wrap; 
   /* flex-wrap: wrap; */
-  gap: 2rem;
+  gap: 1.5rem;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -1114,6 +1118,11 @@ margin-left:5rem;
 }
 
 
+.reviews .box-container p{
+font-size: 1rem;
+}
+
+
   .reviews p{
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
@@ -1122,4 +1131,20 @@ margin-left:5rem;
 
   .fa-star{
     color: gold;
+  }
+
+
+  .reviews .box-container .box .profile {
+    height: 5rem;
+    width: 5rem;
+    border:var(--home-border-box);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .reviews .box-container .box .profile img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: inline-block;
   }
