@@ -1095,22 +1095,17 @@ margin-left:5rem;
 }
 
 .reviews .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1.5rem 0;
-  padding: 0 2rem;
-
-  display: wrap; 
-  /* flex-wrap: wrap; */
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+  padding: 0 2rem;
+  gap: 1.5rem;
 }
 
 .reviews .box-container .box{
+  
   flex: 1 1 10rem;
   border-radius: .3rem;
   padding: .5rem;
