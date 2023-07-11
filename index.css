@@ -17,6 +17,7 @@ font-family: 'Source Sans Pro', sans-serif; */
     --soft-shadow: 0 .1rem  .7rem rgb(83, 83, 83);
     --sub-color: rgb(0, 31, 0);
     --new-border: rgb(184, 184, 184);
+    --p-text: rgb(106, 106, 106);
 
 }
 
@@ -566,7 +567,7 @@ display: flex;
   
  .about-section .about-content p{
     font-size: 1rem;
-    color: var(--main-color);
+    color: var(--p-text);
     line-height: 2;
     justify-content: center;
     text-align: center;
