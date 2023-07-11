@@ -1,3 +1,4 @@
+<?php include 'book.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,14 +56,15 @@
     <form action="book.php" method="post">
         <div class="inputBox">
 
-            <input type="text" placeholder="name" required pattern="[A-Za-z]+" >
+            <input name="name" type="text" placeholder="name" required pattern="[A-Za-z]+" >
 
-            <input type="text" placeholder="subject" required>
-            <input type="email" placeholder="email" required ></div>
+            <input name="subject"type="text" placeholder="subject" required>
+            <input name="email"type="email" placeholder="email" required ></div>
             <div class="inputBox">
-            <textarea placeholder="message" name="" id="" cols="60" rows="6" required ></textarea>
+            <textarea name="message" placeholder="message"  id="" cols="60" rows="6" required ></textarea>
         </div>
-        <input type="submit" class="btn" value="send ">
+        <div class="inputbox"><?php echo $alert;?></div>
+        <input type="submit" name='submit' class="btn" value="send">
         <!-- <span class="btn">send</span> -->
 
     </form>
