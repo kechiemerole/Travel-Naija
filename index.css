@@ -413,7 +413,7 @@ margin-left:5rem;
 
   .top-destinations .box-container{
   
-    /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
     cursor: pointer;
     display: flex;
@@ -1109,13 +1109,17 @@ margin-left:5rem;
   /* outline: 2px rgb(24, 22, 177) dashed; */
   height: 15rem;
   width: auto;
-  border: var(--border);
+  border:  var(--home-border-box);
+  background-color: white;
 }
-
 
 
   .reviews p{
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     padding: 0 2rem;
+  }
+
+  .fa-star{
+    color: gold;
   }
