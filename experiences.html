@@ -44,7 +44,7 @@
 
   <div class="search-bar">
     <form action="" class="search">
-      <input type="text" placeholder="search a tour, city or state" name="q">
+      <input type="text" id="search-item" placeholder="search a tour, city or state" name="q" onkeyup="search()">
       <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
     <p>don't see what you're looking for? let us know in our  <a href="contact.html">contact form </a> and we can add it in the future</p>
@@ -72,7 +72,7 @@
           <image src="packages/carnival-woman-costume-orange-48796.webp" alt="carnival woman"></image>
         </div>
         <div class="content">
-          <h3>Adventure and Tour<br><i class="fas fa-map-marker-alt"></i> Calabar</a></h3>
+          <h3>Calabar Carnival<br><i class="fas fa-map-marker-alt"></i> Calabar</a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales hendrerit odio, vel pretium mauris aliquam at.  </p>
           <a href="book.php" class="btn">book now</a>
         </div>
@@ -82,7 +82,7 @@
           <image src="images/Ogbunike-Cave.jpg" alt="Ogbunike-Cave"></image>
         </div>
         <div class="content">
-          <h3>Adventure and Tour<br><i class="fas fa-map-marker-alt"></i> Anambra</a></h3>
+          <h3>Nativeland<br><i class="fas fa-map-marker-alt"></i> Anambra</a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales hendrerit odio, vel pretium mauris aliquam at.  </p>
           <a href="#" class="btn">book now</a>
         </div>
@@ -94,7 +94,7 @@
           <image src="packages/carnival-woman-costume-orange-48796.webp" alt="carnival woman"></image>
         </div>
         <div class="content">
-          <h3>Adventure and Tour<br><i class="fas fa-map-marker-alt"></i> Calabar</a></h3>
+          <h3>Ilashe beach<br><i class="fas fa-map-marker-alt"></i> Lagos</a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales hendrerit odio, vel pretium mauris aliquam at.  </p>
           <a href="book.php" class="btn">book now</a>
         </div>
@@ -104,7 +104,7 @@
           <image src="packages/carnival-woman-costume-orange-48796.webp" alt="carnival woman"></image>
         </div>
         <div class="content">
-          <h3>Adventure and Tour<br><i class="fas fa-map-marker-alt"></i> Calabar</a></h3>
+          <h3>Magic Land <br><i class="fas fa-map-marker-alt"></i> Abuja</a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales hendrerit odio, vel pretium mauris aliquam at.  </p>
           <a href="book.php" class="btn">book now</a>
         </div>
@@ -148,6 +148,27 @@
     navbar.classList.toggle('active');
 
   };
+
+  function searchProducts() {
+  // Retrieve the search query from the input field
+  var searchQuery = document.getElementById("search-input").value.toLowerCase();
+
+  // Get all the product boxes
+  var productBoxes = document.querySelectorAll(".box");
+
+  // Loop through each product box and check if the search query matches the product name
+  productBoxes.forEach(function(box) {
+    var productName = box.querySelector("h3").textContent.toLowerCase();
+    if (productName.includes(searchQuery)) {
+      // If the search query matches, show the product box
+      box.style.display = "block";
+    } else {
+      // If the search query does not match, hide the product box
+      box.style.display = "none";
+    }
+  });
+}
+
 
   
 
