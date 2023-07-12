@@ -1,5 +1,5 @@
 body{
-    background-image: url('images/zuma-rock.jpg')!important; 
+    background-image: url('eats/wedding.jpg')!important; 
     background-color: rgb(255, 255, 255, 0.6);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
@@ -22,13 +22,12 @@ body{
     border-radius: 3rem;
     background: var(--white);
     border: .0005rem solid rgb(231, 231, 231);
-    margin-left: 0;
-    outline: 1px blue dashed;
+    /* outline: 1px blue dashed; */
   }
 
 
 .bookings-section  .btn{
-  border: 0.005rem solid var(--main-color);
+  border: 0.0005rem solid var(--main-color);
   padding: .5rem 2rem;
   border-radius: 0.8rem;
   margin-top: 2rem !important;
@@ -38,14 +37,15 @@ body{
 }
 
 .bookings-section .box-container .inputBox {
-    flex: 1 1 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 1rem;
     display:grid;
     flex-wrap: wrap;
-    outline: 1px  dashed;
 
 }
 .bookings-section form .inputBox input{
-outline: 1px rgb(187, 38, 152) dashed;
+    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+/* outline: 1px rgb(187, 38, 152) dashed; */
   width: 100%;
   margin:1rem 0;
   padding: 1rem;
