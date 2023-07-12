@@ -101,6 +101,12 @@ section{
 
 }
 
+.home .content {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+}
+
 .header .logo img{
     margin-top: 0;
     padding-top: 0;
@@ -442,6 +448,8 @@ margin-left:5rem;
     text-align: center;
     padding-bottom: .2rem;
     font-size: 2.5rem;
+      
+
   }
   .top-destinations .box-container  .box .image{
     height: 20rem;
@@ -858,7 +866,7 @@ color:var(--main-color);
 
  .heading h1{
   color: var(--white);
-  opacity: 0.3;
+  /* opacity: 0.9; */
  }
 
 

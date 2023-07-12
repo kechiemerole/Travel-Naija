@@ -4,9 +4,9 @@ body{
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
+    
 
 }
-
 
 
  .bookings-section{
@@ -26,13 +26,15 @@ body{
 
 .bookings-section  .btn{
   border: 0.0005rem solid var(--main-color);
-  padding: .5rem 2rem;
+  padding: .6rem 2.1rem;
   border-radius: 0.8rem;
   margin-top: 2rem !important;
   font-weight: bolder;
   color: var(--main-color);
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin-top: 0rem  !important;
 }
+ 
 
 .bookings-section .box-container .inputBox {
     grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
