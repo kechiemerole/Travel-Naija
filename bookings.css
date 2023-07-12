@@ -8,16 +8,14 @@ body{
 }
 
 
-/* 
-  .bookings-section .box-container{
-    display:flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-   
-  }
-  */
+
+ .bookings-section{
+    padding-top:0;
+    margin: 0 3rem;
+ }
+ 
   .bookings-section form{
-    flex: 1 1 30rem;
+    /* flex: 1 1 50rem; */
     padding: 2rem;
     border-radius: 3rem;
     background: var(--white);
