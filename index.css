@@ -428,7 +428,7 @@ margin-left:5rem;
     border: .05rem solid rgb(231, 231, 231);
     border-radius: .5rem;
     /* box-shadow: var(--soft-shadow); */
-    flex: 0 0 22rem; /* Adjust the width as needed */
+    flex: 0 0 20rem; /* Adjust the width as needed */
     /* margin: 10px; */
   }
 
