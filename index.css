@@ -48,6 +48,7 @@ body {
 }
 
 
+
 html{
     scroll-behavior: smooth;
 
@@ -585,14 +586,15 @@ display: flex;
  .about-section .about-content p .btn{
 
     /* display: inline-block; */
-    border: .0005rem solid var(--sub-color);
+    border: .0005rem solid var(--main-color);
     background: var(--white);
     padding: 0.25rem 3rem;
-    border-radius: 0.3rem;
+    border-radius: 0.7rem;
     margin-top: 1rem;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+    
 
  }
   

@@ -1,0 +1,8 @@
+body{
+    background-image: url('images/zuma-rock.jpg')!important; 
+    background-color: rgb(255, 255, 255, 0.6);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
