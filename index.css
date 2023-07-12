@@ -1117,10 +1117,11 @@ margin-left:5rem;
   padding: .5rem;
   text-align: center;
   /* outline: 2px rgb(24, 22, 177) dashed; */
-  height: 15rem;
+  /* height: 25rem; */
   width: auto;
   border:  var(--home-border-box);
   background-color: white;
+
 }
 
 
@@ -1158,5 +1159,18 @@ font-size: 1rem;
     object-fit: cover;
   }
 
+  @media (max-width:800px){
+    .reviews .box-container  { 
+  /* width: 20rem; */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  height: auto;
+}
+}
+
+@media (max-width:700px){
+  .reviews .box-container  { 
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+}
 
 
