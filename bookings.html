@@ -37,6 +37,86 @@
     <div id="menu-btn" class="fa fa-bars">
     </div>
 </section>
+
+<div class="box">
+  <div class="heading" >
+    <h1>bookings</h1>
+  </div>
+  </div>
+  
+<section class ="bookings-section" id="contact" >
+
+
+
+    <div class="box-container">
+
+    <form action="book.php" method="post" class="book">
+        <div class="inputBox">
+
+            <input name="name" type="text" placeholder="name" required pattern="[A-Za-z]+" >
+
+            <input name="subject"type="text" placeholder="subject" required>
+            <input name="email"type="email" placeholder="email" required >
+            <input name="phone"type="number" placeholder="phone number" required >
+            <input name="where"type="text" placeholder="Place you want to visit" required >
+            <input name="guests"type="number" placeholder="Number of guests" required >
+            <div class="dates">
+
+            <span> Departure: </span>
+            <input name="day"type="date" placeholder="Day you are arriving" required ></div>
+            <div class="dates">
+
+            <span> Arrival: </span>
+            <input name="leaving"type="date" placeholder= "Day you are leaving" required > </div></div>
+
+        <div class="inputbox"><?php echo $alert;?></div>
+        <input type="submit" name='submit' class="btn" value="submit">
+        <!-- <span class="btn">send</span> -->
+
+    </form>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
   let menu = document.querySelector('#menu-btn');
   let navbar = document.querySelector('.header .navbar');
@@ -48,11 +128,7 @@
   };
   </script>
 <!-- <section class ="bookings-section" id="bookings-section"> -->
-  <div class="box">
-<div class="heading" >
-  <h1>bookings</h1>
-</div>
-</div>
+
 <!-- </section> -->
 
   <!-- footer -->
