@@ -859,7 +859,7 @@ color:var(--main-color);
  .screen-container {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Divide the grid into two equal columns */
-  grid-gap: 10px; /* Set the gap between grid items */
+  grid-gap: 2rem; /* Set the gap between grid items */
 }
 
 
