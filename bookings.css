@@ -27,7 +27,7 @@ body{
 .bookings-section  .btn{
   border: 0.0005rem solid var(--main-color);
   padding: .6rem 2.1rem;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   margin-top: 2rem !important;
   font-weight: bolder;
   color: var(--main-color);
