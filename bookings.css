@@ -1,7 +1,7 @@
 body{
-    background-image: url('eats/wedding.jpg')!important; 
-    background-color: rgb(255, 255, 255, 0.6);
-    background-blend-mode: overlay;
+    background-image: url('eats/wedding.jpg'), url(https://grainy-gradients.vercel.app/noise.svg)!important; 
+    /* background-color: rgb(255, 255, 255, 0.6); */
+    /* background-blend-mode: overlay; */
     background-repeat: no-repeat;
     background-size: cover;
     
