@@ -1,26 +1,27 @@
-body{
+/* body{
     background-image: url('eats/wedding.jpg'), url(https://grainy-gradients.vercel.app/noise.svg)!important; 
     /* background-color: rgb(255, 255, 255, 0.6); */
     /* background-blend-mode: overlay; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
-    
+     */
 
-}
+
 
 
  .bookings-section{
     padding-top:0;
-    margin: 0 3rem;
+    margin: 2rem 3rem;
  }
  
   .bookings-section form{
     /* flex: 1 1 50rem; */
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 3rem;
     background: var(--white);
     border: .0005rem solid rgb(231, 231, 231);
-    /* outline: 1px blue dashed; */
+    box-shadow: 0 .1rem .5rem rgb(99, 96, 96);
+
   }
 
 
@@ -43,6 +44,16 @@ body{
     flex-wrap: wrap;
 
 }
+
+.bookings-section .box-container img  {
+  height: 18rem;
+  width: 100%;
+  border-radius: 2rem 2rem .3rem .3rem;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1rem;
+}
+
 .bookings-section form .inputBox input{
     grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
 /* outline: 1px rgb(187, 38, 152) dashed; */

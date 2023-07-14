@@ -1005,7 +1005,7 @@ font-size: 1rem;
  }
 
  ::placeholder{
-  color: var(--main-color);
+  color: rgb(158, 157, 157);
 
  }
 .search-bar .search  .fa-solid {
