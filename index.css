@@ -859,13 +859,13 @@ color:var(--main-color);
   font-size: 4rem;  
 
  }
-
+/* 
  .screen-container {
   display: grid;
-  grid-template-columns: 20% 80%; /* Divide the grid into two equal columns */
+  grid-template-columns: 20% 80%; 
   grid-gap: 0; 
   margin: 0, 0;
-}
+} */
 
 /* 
 .screen-container:nth-child(2) {
