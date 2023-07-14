@@ -871,7 +871,7 @@ color:var(--main-color);
  .experiences .sidebar{
   /* grid-row: 2 / 5; */
    outline: 2px green;
-  height: 60rem;
+  height: 40rem;
   margin-top: 1rem;
   /* background-color: rgb(255, 255, 255); */
   width: auto; /* Set the width of the sidebar */
