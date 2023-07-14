@@ -843,6 +843,11 @@ color:var(--main-color);
 .experiences .heading-title1{
   font-size: 4rem;
 }
+.experiences-info .heading-title{
+text-align: left; 
+margin-left: 2rem;
+}
+
   .services .box-container .box p{
     font-size: 1rem;
     color:var(--sub-color);
@@ -1100,11 +1105,6 @@ padding: .5rem 3rem !important;
   align-items: center;
 }
 
-/* .experience .box-container  .box image{
-  height: 1rem;
-  overflow: hidden;
-  
-}  */
 .experiences hr {
 border: none;
 border: .005rem solid var(--main-color); 
@@ -1121,7 +1121,11 @@ margin-left:4rem;
   object-fit: cover;
 }
 
-
+.rating{
+  align-items: right;
+  justify-content: right;
+  display: flex;
+}
 
 
 .experiences .box-container .box img{
@@ -1149,9 +1153,10 @@ margin-left:4rem;
 .experiences .box-container .box h3{
   font-size: .8rem;
   color: rgb(71, 71, 71);
-  /* color: var(--main-color); */
-  /* padding: .5rem 0; */
-
+ 
+  /* align-items: left;
+  justify-content: left;
+  display: flex; */
 }
 
 .experiences .box-container .box  .content .btn{
