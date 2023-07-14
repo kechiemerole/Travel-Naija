@@ -858,8 +858,9 @@ color:var(--main-color);
 
  .screen-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide the grid into two equal columns */
-  grid-gap: 2rem; /* Set the gap between grid items */
+  grid-template-columns: 20% 80%; /* Divide the grid into two equal columns */
+  grid-gap: 0; 
+  margin: 0, 0;
 }
 
 
@@ -869,32 +870,34 @@ color:var(--main-color);
 
  .experiences .sidebar{
   /* grid-row: 2 / 5; */
-   outline: 1px green;
-  height: 80%;
-  margin-top: 30rem;
-  color: rgb(165, 30, 53);
-  background-color: pink;
-  width: 22rem; /* Set the width of the sidebar */
-  /* position: fixed;
-  z-index: 1;  */
-  top: 0; /* Stay at the top */
-  left: 0;
+   outline: 2px green;
+  height: 60rem;
+  margin-top: 1rem;
+  background-color: rgb(255, 255, 255);
+  width: auto; /* Set the width of the sidebar */
+  /* position: fixed;  */
 }
  .experiences{
   margin-top:0 !important;
-  padding-top: 1rem;
-  padding-left: 1rem;
+  padding: 1rem;
 
 
  }
-.experience .category{
+
+ 
+
+ .sub-experience{
+  padding: 1rem;
+
+ }
+.experiences .category{
  display: inline-block;
  border: .00005rem solid rgb(169, 0, 169);
  background: var(--white);
  padding: 0.2rem .7rem;
  text-decoration: none;
  border-radius: 1.5rem;
- margin:5%;
+ margin:.5rem .005rem;
  cursor: pointer;
  font-size: .7rem;
  background-color: rgb(200, 155, 200);
@@ -902,47 +905,47 @@ color:var(--main-color);
  color: white;
 }
 
-.experience .category2{
+.experiences .category2{
   display: inline-block;
   border: .00005rem solid rgb(203, 3, 70);
   background: var(--white);
   padding: 0.2rem .7rem;
   text-decoration: none;
   border-radius: 1.5rem;
-  margin:5%;
+  margin:.5rem .005rem;
   cursor: pointer;
   font-size: .7rem;
-  background-color: rgb(203, 3, 70);
+  background-color: rgb(126, 0, 42);
   font-weight: bolder;
   color: white;
  }
 
- .experience .category3{
+ .experiences .category3{
   display: inline-block;
   border: .00005rem solid rgb(0, 88, 83);
   background: var(--white);
   padding: 0.2rem .7rem;
   text-decoration: none;
   border-radius: 1.5rem;
-  margin:5%;
+  margin:.5rem .005rem;
   cursor: pointer;
   font-size: .7rem;
-  background-color:rgb(0, 137, 130);
+  background-color:rgb(59, 157, 152);
   font-weight: bolder;
   color: white;
  }
 
- .experience .category4{
+ .experiences .category4{
   display: inline-block;
   border: .00005rem solid rgb(33, 0, 73);
   background: var(--white);
   padding: 0.2rem .7rem;
   text-decoration: none;
   border-radius: 1.5rem;
-  margin:5%;
+  margin:.5rem .005rem;
   cursor: pointer;
   font-size: .7rem;
-  background-color:rgb(77, 0, 171);
+  background-color:rgb(114, 78, 158);
   font-weight: bolder;
   color: white;
  }
@@ -1031,46 +1034,46 @@ font-size: .7rem;
 color: var(--main-color);
 font-weight: bolder;
 cursor: pointer;
+
 }
 
 .experiences .search-bar .btn:hover{
   color: var(--white)
 }
 
-.experience{
-  padding-top: 1rem;
-  padding-left: 3rem;
-  padding-right: 2rem;
-  margin-right:0;
+.experiences{
+  padding: 1rem, 5rem;
 
 
 }
 
-.experience .box-container{
+.experiences .box-container{
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  gap: 1rem;
+  gap: 2rem;
   cursor: pointer;
   flex-wrap: wrap;
+  justify-content: center;
 
 }
 
 
-.experience .box-container .box {
+.experiences .box-container .box {
   background: var(--white);
   border: .0005rem solid rgb(231, 231, 231);
   border-radius: .5rem;
-  width: 20rem;
+  width: 15rem;
+
 }
 
-.experience  h1 {
+.experiences  h1 {
   text-align: center;
   padding-bottom: 0rem;
   font-size: 2.5rem;
   color: var(--sub-color);
 }
 
-.experience  a{
+.experiences  a{
   justify-content: center;
   align-items: center;
 }
@@ -1080,17 +1083,17 @@ cursor: pointer;
   overflow: hidden;
   
 }  */
-.experience hr {
+.experiences hr {
 border: none;
 border: .005rem solid var(--main-color); 
 margin-bottom: 1rem;
 display: flex;
-margin-right:2rem;
-margin-left:2rem;
+margin-right:4rem;
+margin-left:4rem;
 }
 
 
-.experience .box-container .box:hover .image img{
+.experiences .box-container .box:hover .image img{
   transition: 0.3s;
   opacity:0.7;
   object-fit: cover;
@@ -1099,38 +1102,42 @@ margin-left:2rem;
 
 
 
-.experience .box-container .box img{
-  height: 15rem;
+.experiences .box-container .box img{
+  height: 12rem;
   width: 100%;
   object-fit: cover;
   transition: .2s linear;
   border-radius: .5rem .5rem 0 0;
 }
 
-.experience .box-container .box .content{
+.experiences .box-container .box .content{
  text-align: center;
- padding: 1.5rem;
+ padding: .5rem;
 }
 
-.experience .box-container .box p{
+/* .experience .box-container .box p{
 
   font-size: 1rem;
   color: var(--main-color);
   line-height: 2;
   padding: .5rem 0;
 
-}
+} */
 
-.experience .box-container .box h3{
-  font-size: 1rem;
+.experiences .box-container .box h3{
+  font-size: .8rem;
   /* color: var(--main-color); */
   /* padding: .5rem 0; */
 
 }
 
-.experience .box-container .box  .content .btn{
+.experiences .box-container .box  .content .btn{
   cursor: pointer;
   margin-top: 0;
+  padding: .3rem .5rem;
+  font-size: .8rem;
+  border: .05rem solid rgb(83, 83, 83);
+
 }
 
 @media(prefers-reduced-motion){
