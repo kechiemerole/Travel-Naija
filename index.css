@@ -873,9 +873,15 @@ color:var(--main-color);
    outline: 2px green;
   height: 60rem;
   margin-top: 1rem;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   width: auto; /* Set the width of the sidebar */
   /* position: fixed;  */
+
+}
+
+.form-check{
+  line-height: 2rem;
+
 }
  .experiences{
   margin-top:0 !important;
@@ -890,9 +896,9 @@ color:var(--main-color);
   padding: 1rem;
 
  }
-.experiences .category{
+.experiences .category1{
  display: inline-block;
- border: .00005rem solid rgb(169, 0, 169);
+ border: .00005rem solid rgb(169, 210, 255);
  background: var(--white);
  padding: 0.2rem .7rem;
  text-decoration: none;
@@ -900,14 +906,14 @@ color:var(--main-color);
  margin:.5rem .005rem;
  cursor: pointer;
  font-size: .7rem;
- background-color: rgb(200, 155, 200);
+ background-color: rgb(47, 121, 199);
  font-weight: bolder;
- color: white;
+ color: rgb(169, 210, 255);
 }
 
 .experiences .category2{
   display: inline-block;
-  border: .00005rem solid rgb(203, 3, 70);
+  border: .00005rem solid rgb(236, 8, 84);
   background: var(--white);
   padding: 0.2rem .7rem;
   text-decoration: none;
@@ -917,12 +923,12 @@ color:var(--main-color);
   font-size: .7rem;
   background-color: rgb(126, 0, 42);
   font-weight: bolder;
-  color: white;
+  color: rgb(236, 8, 84);
  }
 
  .experiences .category3{
   display: inline-block;
-  border: .00005rem solid rgb(0, 88, 83);
+  border: .00005rem solid rgb(30, 227, 218)
   background: var(--white);
   padding: 0.2rem .7rem;
   text-decoration: none;
@@ -932,12 +938,12 @@ color:var(--main-color);
   font-size: .7rem;
   background-color:rgb(59, 157, 152);
   font-weight: bolder;
-  color: white;
+  color: rgb(30, 227, 218);
  }
 
  .experiences .category4{
   display: inline-block;
-  border: .00005rem solid rgb(33, 0, 73);
+  border: .00005rem solid rgb(207, 167, 255);
   background: var(--white);
   padding: 0.2rem .7rem;
   text-decoration: none;
@@ -947,7 +953,22 @@ color:var(--main-color);
   font-size: .7rem;
   background-color:rgb(114, 78, 158);
   font-weight: bolder;
-  color: white;
+  color: rgb(207, 167, 255);
+ }
+
+ .experiences .category5{
+  display: inline-block;
+  border: .00005rem solid rgb(253, 184, 100);
+  background: var(--white);
+  padding: 0.2rem .7rem;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  margin:.5rem .005rem;
+  cursor: pointer;
+  font-size: .7rem;
+  background-color:rgb(203, 112, 0);
+  font-weight: bolder;
+  color: rgb(253, 184, 100);
  }
  .heading h1{
   color: var(--white);
