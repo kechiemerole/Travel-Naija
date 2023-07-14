@@ -1071,7 +1071,7 @@ cursor: pointer;
 .experiences .box-container{
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  gap: 2rem;
+  gap: .8rem;
   cursor: pointer;
   flex-wrap: wrap;
   justify-content: center;
@@ -1083,7 +1083,7 @@ cursor: pointer;
   background: var(--white);
   border: .0005rem solid rgb(231, 231, 231);
   border-radius: .5rem;
-  width: 15rem;
+  width: 17rem;
 
 }
 
