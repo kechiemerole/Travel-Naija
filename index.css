@@ -1141,7 +1141,7 @@ transition: .4s;
   object-fit: cover;
   transition: .2s linear;
   border-radius: .5rem .5rem 0 0;
-  box-shadow: 0 .2rem  0.5rem rgb(83, 83, 83);
+  box-shadow: 0 .2rem  0.5rem  rgb(83, 83, 83);
 
 }
 
