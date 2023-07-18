@@ -933,7 +933,7 @@ font-size: 1rem;
 
  .experiences .category3{
   display: inline-block;
-  border: .00005rem solid rgb(30, 227, 218)
+  border: .00005rem solid rgb(30, 227, 218);
   background: var(--white);
   padding: 0.2rem .7rem;
   text-decoration: none;
@@ -948,6 +948,20 @@ font-size: 1rem;
 
  .experiences .category4{
   display: inline-block;
+  border: .00005rem solid rgb(253, 184, 100);
+  background: var(--white);
+  padding: 0.2rem .7rem;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  margin:.5rem .005rem;
+  cursor: pointer;
+  font-size: .7rem;
+  background-color:rgb(203, 112, 0);
+  font-weight: bolder;
+  color: rgb(253, 184, 100);
+ }
+ .experiences .category5{
+  display: inline-block;
   border: .00005rem solid rgb(207, 167, 255);
   background: var(--white);
   padding: 0.2rem .7rem;
@@ -961,20 +975,7 @@ font-size: 1rem;
   color: rgb(207, 167, 255);
  }
 
- .experiences .category5{
-  display: inline-block;
-  border: .00005rem solid rgb(253, 184, 100);
-  background: var(--white);
-  padding: 0.2rem .7rem;
-  text-decoration: none;
-  border-radius: 1.5rem;
-  margin:.5rem .005rem;
-  cursor: pointer;
-  font-size: .7rem;
-  background-color:rgb(203, 112, 0);
-  font-weight: bolder;
-  color: rgb(253, 184, 100);
- }
+ 
  .heading h1{
   color: var(--white);
   /* opacity: 0.9; */
