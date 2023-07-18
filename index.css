@@ -1092,6 +1092,7 @@ padding: .5rem 3rem !important;
   border-radius: .5rem;
   width: 17rem;
 
+
 }
 
 .experiences  h1 {
@@ -1135,6 +1136,7 @@ margin-left:4rem;
   object-fit: cover;
   transition: .2s linear;
   border-radius: .5rem .5rem 0 0;
+
 }
 
 .experiences .box-container .box .content{
