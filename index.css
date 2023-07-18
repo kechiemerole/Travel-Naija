@@ -1123,8 +1123,8 @@ margin-left:4rem;
 }
 
 .rating{
-  align-items: right;
-  justify-content: right;
+  align-items: center;
+  justify-content: center;
   display: flex;
 }
 
