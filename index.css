@@ -1129,8 +1129,8 @@ margin-left:4rem;
 
 }
 .experiences .box-container .box:hover{
-transform: scale(1.2);
-transition: .4s;
+  transform: translateY(-3rem);
+transition: .6s;
 }
 
 .rating{
