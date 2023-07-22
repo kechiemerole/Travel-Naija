@@ -493,7 +493,8 @@ color: #222 !important;
  .top-destinations .box-container .box .content{
    /* text-align: center; */
    padding: 1rem;
-   background-color: rgb(250, 248, 248);
+   /* background-color: rgb(250, 248, 248); */
+    background-color:white;
    border-radius: .5rem;
 
 
@@ -977,7 +978,7 @@ font-size: 1rem;
 
  .experiences .category6{
   display: inline-block;
-  border: .00005rem solid rgb(85, 92, 190);
+  border: .00005rem solid rgb(255, 155, 203);
   background: var(--white);
   padding: 0.2rem .7rem;
   text-decoration: none;
@@ -985,9 +986,9 @@ font-size: 1rem;
   margin:.5rem .005rem;
   cursor: pointer;
   font-size: .7rem;
-  background-color:rgb(0, 10, 148);
+  background-color:rgb(248, 0, 120);
   font-weight: bolder;
-  color: rgb(85, 92, 190);
+  color: rgb(255, 155, 203);
  }
 
  
