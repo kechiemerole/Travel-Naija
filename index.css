@@ -975,6 +975,21 @@ font-size: 1rem;
   color: rgb(207, 167, 255);
  }
 
+ .experiences .category6{
+  display: inline-block;
+  border: .00005rem solid rgb(85, 92, 190);
+  background: var(--white);
+  padding: 0.2rem .7rem;
+  text-decoration: none;
+  border-radius: 1.5rem;
+  margin:.5rem .005rem;
+  cursor: pointer;
+  font-size: .7rem;
+  background-color:rgb(0, 10, 148);
+  font-weight: bolder;
+  color: rgb(85, 92, 190);
+ }
+
  
  .heading h1{
   color: var(--white);
