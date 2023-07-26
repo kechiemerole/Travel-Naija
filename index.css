@@ -789,9 +789,13 @@ color: rgb(98, 98, 98);
  padding-right: .8rem;
  padding-left: .8rem;
 
- 
 }
 
+.packages-section .box-container .box .content .benefits .fa-solid{
+font-size: 2rem;
+/* outline: blue dashed 1px; */
+
+}
 .packages-section .box-container .box p{
   font-size: .8rem;
   color: rgb(98, 98, 98);
