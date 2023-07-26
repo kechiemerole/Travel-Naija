@@ -1145,7 +1145,8 @@ margin-left:4rem;
 
 }
 .experiences .box-container .box:hover{
-  transform: translateY(-3rem);
+  /* transform: translateY(-3rem); */
+   transform: scale(0.95);
 transition: .6s;
 }
 
@@ -1179,6 +1180,7 @@ transition: .6s;
   padding: .5rem 0;
 
 } */
+
 
 .experiences .box-container .box h3{
   font-size: .8rem;
