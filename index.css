@@ -1208,7 +1208,7 @@ transition: .6s;
 .top-destinations{
   opacity: .2;
   transition:  all 2s;
-  transform: translateY(8rem);
+  transform: translateY(9rem);
  }
  .experiences-info{
   opacity: .2;
