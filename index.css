@@ -709,6 +709,7 @@ font-weight: bolder;
 
 
 .packages-section{
+  padding-top: 1.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -739,7 +740,7 @@ font-weight: bolder;
 .packages-section  h1{
   text-align: center;
   padding-bottom: .2rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   
 }
 .packages-section  h3{
@@ -1126,7 +1127,7 @@ padding: .5rem 3rem !important;
 .experiences  h1 {
   text-align: center;
   padding-bottom: 0rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--sub-color);
 }
 
