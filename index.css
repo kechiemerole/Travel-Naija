@@ -740,6 +740,10 @@ font-weight: bolder;
   text-align: center;
   padding-bottom: .2rem;
   font-size: 2.5rem;
+  
+}
+.packages-section  h3{
+color: rgb(98, 98, 98);
 }
 
 .packages-section  #price{
@@ -790,10 +794,14 @@ font-weight: bolder;
 
 .packages-section .box-container .box p{
   font-size: .8rem;
-  color: var(--main-color);
+  color: rgb(98, 98, 98);
   line-height: 2;
   /* padding: .005rem 0; */
 
+}
+
+.packages-section .box-container .box .fa-solid {
+  color: var(--main-color)
 }
 
 .packages-section .box-container .box  .content .btn{
