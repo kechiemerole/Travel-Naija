@@ -779,7 +779,6 @@ color: rgb(98, 98, 98);
 .packages-section .box-container .box:hover .image{
   transition: 0.3s linear;
   transform: scale(.95);
-  /* outline: dashed rgb(30, 255, 0) 1px; */
 
 }
 
