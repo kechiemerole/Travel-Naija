@@ -778,7 +778,7 @@ color: rgb(98, 98, 98);
 
 .packages-section .box-container .box:hover .image{
   transition: 0.3s linear;
-  opacity:0.7;
+  transform: scale(.95);
   /* outline: dashed rgb(30, 255, 0) 1px; */
 
 }
@@ -792,11 +792,12 @@ color: rgb(98, 98, 98);
 }
 
 .packages-section .box-container .box .content .benefits .fa-solid{
-font-size: 2rem;
+font-size: 1.5rem;
 /* outline: blue dashed 1px; */
 
 }
 .packages-section .box-container .box p{
+  text-align: left;
   font-size: .8rem;
   color: rgb(98, 98, 98);
   line-height: 2;
