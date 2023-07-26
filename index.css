@@ -311,10 +311,10 @@ input:invalid {
     
 }
 .btn:hover{
-    background: rgb(182, 181, 181);
+    /* background: rgb(182, 181, 181); */
+    background:var(--main-color) ;
     transition: .5s;
-    opacity: .7;
-    
+
 }
 
 a.btn {
@@ -325,6 +325,7 @@ a.btn {
   a.btn:hover {
     color: var(--white); 
     font-weight: bolder;
+
     
   }
 .home .controls{
@@ -611,8 +612,8 @@ display: flex;
   
 
  .about-section .about-content p .btn:hover{
-    background: rgb(182, 181, 181);
-    transition: .5s;
+  background:var(--main-color) ;
+  transition: .5s;
     opacity: .7;
     
 }
@@ -1071,7 +1072,9 @@ margin: 2rem auto;
 }
 
 .experiences   .view-more-button:hover{
-  color: blue;
+  background:var(--main-color) ;
+  color: white;
+  transition: .7s;
 }
 
 .experiences .search-bar   p{
@@ -1095,7 +1098,7 @@ padding: .5rem 3rem !important;
 }
 
 .experiences .search-bar .btn:hover{
-  color: var(--white)
+  color: var(--white);
 }
 
 .experiences{
